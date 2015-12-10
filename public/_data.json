@@ -1,0 +1,10 @@
+{
+  "about": {
+    "title": "About",
+    "description": "About PowderKeg Labs.",
+    "path": "about.html"
+  },
+  "sitemap": {
+    "layout": false
+  }
+}

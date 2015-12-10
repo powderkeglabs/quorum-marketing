@@ -1,0 +1,48 @@
+header.index-header {
+  min-height: 450px;
+  text-align: center;
+  // background-image: url('/assets/images/backgrounds/desktop-bt-1200.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.uvp {
+  // text-transform: uppercase;
+}
+
+.lead-in {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+section {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+}
+
+main > section:nth-child(odd) {
+  background-color: color('grey', 'lighten-3');
+}
+
+
+.flex {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.flex-item {
+  flex: 0 1 auto;
+}
+
+@media(min-width: 500px) {
+
+  .flex {
+    flex-flow: row nowrap;
+  }
+
+
+
+}
