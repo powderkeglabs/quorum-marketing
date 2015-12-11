@@ -1,9 +1,11 @@
-header.index-header {
+header {
   min-height: 450px;
   text-align: center;
-  // background-image: url('/assets/images/backgrounds/desktop-bt-1200.jpg');
+  background-image: url('/assets/images/toronto1.jpg');
   background-position: center;
   background-size: cover;
+
+  color: #fff;
 }
 
 .uvp {
@@ -43,6 +45,9 @@ main > section:nth-child(odd) {
     flex-flow: row nowrap;
   }
 
+}
 
-
+.btn:hover, btn-large:hover {
+  color: $button-color-raised;
+  background-color: lighten($button-color, 5%);
 }
