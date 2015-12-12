@@ -1,5 +1,13 @@
 .benefits {
 
+  .flex {
+    justify-content: space-between;
+  }
+
+  .flex-item {
+    flex: 0 1 32%;
+  }
+
   .fa-stack {
     color: $primary-color-dark;
     opacity: 0.92;

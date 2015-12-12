@@ -1,0 +1,19 @@
+// On larger screen sizes, switch to 2 column view
+@media(min-width: 650px) {
+  .faq .flex.row {
+    flex-flow: row wrap;
+    align-content: center;
+    align-self: center;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .faq .flex .flex-item {
+    flex: 0 1 48%;
+  }
+
+  .faq .flex .flex-item {
+    margin: 5px;
+    padding: 5px;
+  }
+}
