@@ -2,22 +2,37 @@
   <div class="container">
     <div class="row">
       <div class="col l6 s12">
-        <p class="grey-text text-lighten-4">
-          Fall back together everybody loves pretty trains operation hummingbird crossword. Burnt toast this sick beat pictures in frames of. Kisses on cheeks Max Martin.
+        <a href="/" class="brand-logo">
+          <%- partial('logo.ejs', {}) %>
+        </a>
+        <p class="grey-text text-lighten-4 headline">
+          <%= headline %>
         </p>
+
       </div>
-      <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Links</h5>
+      <div class="col l4 offset-l2 s12 white-text footer-links">
+        <h5>Links</h5>
         <ul>
-          <li><a class="grey-text text-darken-1" href="#">Contact Us</a></li>
+          <li><a class="grey-text text-lighten-2" href="<%= demo_url %>" target="_blank">Demo</a></li>
+          <li><a class="grey-text text-lighten-2" href="#">How it Works</a></li>
+          <li><a class="grey-text text-lighten-2" href="#">Features</a></li>
+          <li><a class="grey-text text-lighten-2" href="#">FAQ</a></li>
+          <li><a class="grey-text text-lighten-2" href="#">Case Studies</a></li>
+          <li><a class="grey-text text-lighten-2" href="#">Contact</a></li>
         </ul>
       </div>
     </div>
   </div>
   <div class="footer-copyright">
     <div class="container">
-      <span class="grey-text">&copy; 2015 <%= site_name%></span>
-      <span class="grey-text">By PowderKeg Labs</span>
+      <div class="row">
+        <div class="col s6 left-align">
+          <span class="grey-text text-lighten-3">&copy; 2015 <%= site_name%></span>
+        </div>
+        <div class="col s6 right-align">
+          <span class="grey-text text-lighten-3">By <%= author %></span>
+        </div>
+      </div>
     </div>
   </div>
 </footer>

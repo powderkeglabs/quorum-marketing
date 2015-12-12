@@ -1,5 +1,13 @@
-a.brand-logo {
+nav {
+  background-color: $primary-color-dark;
+}
+
+nav a.brand-logo {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+}
+
+nav a.brand-logo span.full {
+  padding-left: 5px;
 }

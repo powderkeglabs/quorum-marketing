@@ -3,8 +3,11 @@
     "title": "Quorum - Electronic Proxies for Condo Meetings",
     "description": "",
     "site_name": "Quorum",
+    "uvp": "Never Miss Quorum",
+    "headline": "Simple, secure and legally valid electronic proxy forms for your condominium's owner meetings. Getting quorum just got a whole lot easier.",
     "path": "",
     "image": "",
-    "author": "PowderKeg Labs"
+    "author": "PowderKeg Labs",
+    "demo_url": "#"
   }
 }
