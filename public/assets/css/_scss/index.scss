@@ -39,6 +39,15 @@ main > section:nth-child(odd) {
   flex: 0 1 auto;
 }
 
+// Flex item type where it's all a column
+// - top align each benefit in the row
+.flex.badge-flex {
+  flex-flow: column nowrap;
+  align-items: center;
+  align-self: flex-start;
+  justify-content: center;
+}
+
 @media(min-width: 500px) {
 
   .flex {
