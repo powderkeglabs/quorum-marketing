@@ -1,4 +1,4 @@
 [submodule "www"]
 	path = www
-	url = git@github.com:powderkeglabs/pklsite.git
+	url = git@github.com:powderkeglabs/quorum-marketing.git
 	branch = gh-pages

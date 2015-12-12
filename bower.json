@@ -17,6 +17,5 @@
   "dependencies": {
     "Materialize": "materialize#~0.97.1",
     "jquery": "~2.1.4",
-    "prism": "~1.2.0"
   }
 }
