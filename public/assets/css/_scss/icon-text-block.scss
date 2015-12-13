@@ -1,0 +1,18 @@
+.icon-text-block {
+  flex: 0 1 30%;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  .heading {
+    // font-size: 1.55rem;
+  }
+
+  .description {
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+  }
+}
+
+.icon-text-block .fa-stack {
+  color: $primary-color-dark;
+}

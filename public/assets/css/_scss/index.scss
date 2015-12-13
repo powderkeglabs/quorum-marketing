@@ -16,7 +16,6 @@ main > section:nth-child(odd) {
   background-color: color('grey', 'lighten-3');
 }
 
-
 .flex {
   display: flex;
   flex-flow: column nowrap;
@@ -50,4 +49,8 @@ main > section:nth-child(odd) {
 .btn:hover, btn-large:hover {
   color: $button-color-raised;
   background-color: lighten($button-color, 5%);
+}
+
+.screens-img {
+  padding: 10px;
 }
