@@ -1,0 +1,16 @@
+.screens {
+
+  .screens-img {
+    padding: 5px;
+  }
+
+  .gif-img {
+    width: 95%;
+    border: 10px solid color('grey', 'lighten-2');
+  }
+
+  .screens .flex.row {
+    justify-content: space-between;
+  }
+
+}

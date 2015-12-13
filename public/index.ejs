@@ -33,21 +33,37 @@
       <div class="row">
         <div class="col s12 center-align">
           <h2>How It Works</h2>
-          <p>We'll create an electronic version of your proxy and make it accessible online through a website URL. We'll then notify your owners of the URL by email. It's super easy to fill out the proxy, there are no apps to download, and any web browser will do.</p>
-
-          <p>See it in action...</p>
-
-          <img src="/assets/images/quorum.gif" class="responsive-img" />
-
-          <p>Better yet, try it yourself</p>
-          <p><a href="#" class="btn-large waves-effect waves-light accent-color">Go to Demo</a><p>
-
         </div>
+      </div>
+      <div class="row flex">
+
+        <%- partial('_shared_partials/icon-text-block', {
+          icon: 'fa-cloud-upload',
+          size: 'fa-3x',
+          heading: 'Upload your Proxy',
+          description: "It'll get converted to an easy-to-use electronic version accessible through a website URL."
+        }); %>
+
+        <%- partial('_shared_partials/icon-text-block', {
+          icon: 'fa-share',
+          size: 'fa-3x',
+          heading: 'Distribute It',
+          description: "We email the electronic proxy URL to your owners. You can also distribute the URL using your own means."
+        }); %>
+
+        <%- partial('_shared_partials/icon-text-block', {
+          icon: 'fa-laptop',
+          size: 'fa-3x',
+          heading: 'Fill It Out',
+          description: "Owners complete the proxy using their phone, tablet, or computer. There are no apps to download, just use a web browser."
+        }); %>
+
       </div>
     </div>
   </section>
 
-  <%- partial('_partials/benefits', {}) %>
+
+  <%- partial('_partials/screens', {}) %>
 
   <%- partial('_partials/faq', {}) %>
 

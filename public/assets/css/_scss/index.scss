@@ -51,19 +51,6 @@ main > section:nth-child(odd) {
   background-color: lighten($button-color, 5%);
 }
 
-.screens-img {
-  padding: 5px;
-}
-
-.screens .flex.row {
-  justify-content: space-between;
-}
-
-.gif-img {
-  width: 95%;
-  border: 10px solid color('grey', 'lighten-2');
-}
-
 .flex-text {
   order: 1;
 }
