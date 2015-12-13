@@ -17,3 +17,13 @@
     padding: 5px;
   }
 }
+
+.faq .question {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: lighten($text-primary-color, 20%);
+}
+
+.faq .answer {
+  margin-top: 0.5rem;
+}
