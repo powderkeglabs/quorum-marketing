@@ -5,16 +5,23 @@
     align-content: center;
     align-self: center;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .faq .flex .flex-item {
-    flex: 0 1 48%;
+    flex: 0 1 50%;
   }
 
-  .faq .flex .flex-item {
-    margin: 5px;
-    padding: 5px;
+  .faq-item {
+    margin-top: 25px;
+  }
+
+  .faq-item:nth-child(odd) {
+    padding-right: 15px;
+  }
+
+  .faq-item:nth-child(even) {
+    padding-left: 15px;
   }
 }
 

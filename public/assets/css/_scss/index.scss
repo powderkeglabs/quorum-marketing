@@ -65,8 +65,12 @@ main > section:nth-child(odd) {
     order: 2;
   }
   .flex-row-left {
-    flex: 0 1 40%;
+    flex: 0 1 50%;
     order: 1
+  }
+
+  .flex-text.flex-row-left {
+    padding-right: 5rem;
   }
 
   .uvp-col {
