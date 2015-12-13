@@ -52,5 +52,33 @@ main > section:nth-child(odd) {
 }
 
 .screens-img {
-  padding: 10px;
+  padding: 5px;
+}
+
+.screens .flex.row {
+  justify-content: space-between;
+}
+
+.gif-img {
+  width: 95%;
+  border: 10px solid color('grey', 'lighten-2');
+}
+
+.flex-text {
+  order: 1;
+}
+
+.flex-img {
+  order: 2;
+}
+
+@media (min-width: 650px){
+  .flex-row-right {
+    flex: 0 1 50%;
+    order: 2;
+  }
+  .flex-row-left {
+    flex: 0 1 40%;
+    order: 1
+  }
 }
