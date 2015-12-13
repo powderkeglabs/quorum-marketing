@@ -1,25 +1,15 @@
 <header class="index-header">
   <div class="flex header-fill-overlay">
     <div class="container">
-      <div class="row">
-        <div class="col s12">
+      <div class="row flex">
+        <div class="flex-item flex-uvp">
           <h1 class="uvp"><%= uvp %></h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12">
           <p class="lead-in">
             <%= headline %>
           </p>
+          <p><a href="#" class="btn-large waves-effect waves-light accent-color">Try the Demo</a></p>
         </div>
-      </div>
-      <div class="row">
-        <div class="col s12 center-align">
-          <a href="#" class="btn-large waves-effect waves-light accent-color">Try the Demo</a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col s12 center-align">
+        <div class="flex-item right-align">
           <img class="responsive-img" src="/assets/images/hero.png" />
         </div>
       </div>
@@ -28,40 +18,7 @@
 </header>
 <main>
 
-  <section id="how-it-works">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 center-align">
-          <h2>How It Works</h2>
-        </div>
-      </div>
-      <div class="row flex">
-
-        <%- partial('_shared_partials/icon-text-block', {
-          icon: 'fa-cloud-upload',
-          size: 'fa-3x',
-          heading: 'Upload your Proxy',
-          description: "It'll get converted to an easy-to-use electronic version accessible through a website URL."
-        }); %>
-
-        <%- partial('_shared_partials/icon-text-block', {
-          icon: 'fa-share',
-          size: 'fa-3x',
-          heading: 'Distribute It',
-          description: "We email the electronic proxy URL to your owners. You can also distribute the URL using your own means."
-        }); %>
-
-        <%- partial('_shared_partials/icon-text-block', {
-          icon: 'fa-laptop',
-          size: 'fa-3x',
-          heading: 'Fill It Out',
-          description: "Owners complete the proxy using their phone, tablet, or computer. There are no apps to download, just use a web browser."
-        }); %>
-
-      </div>
-    </div>
-  </section>
-
+  <%- partial('_partials/how_it_works', {}) %>
 
   <%- partial('_partials/screens', {}) %>
 

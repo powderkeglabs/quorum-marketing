@@ -1,5 +1,9 @@
 .screens {
 
+  .row.flex {
+    justify-content: space-between;
+  }
+
   .screens-img {
     padding: 5px;
   }
