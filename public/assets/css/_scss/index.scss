@@ -69,8 +69,10 @@ main > section:nth-child(odd) {
     order: 1
   }
 
-  .flex-item.flex-uvp {
-    padding: 40px;
+  .uvp-col {
     text-align: left;
+  }
+  .hero-col {
+    text-align: right;
   }
 }
