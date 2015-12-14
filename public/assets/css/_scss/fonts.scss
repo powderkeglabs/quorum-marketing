@@ -1,6 +1,11 @@
 html {
-  font-size: 14px;
+  font-size: 15px;
+  @media (min-width: 500px){
+    font-size: 14px;
+  }
 }
+
+
 
 .uvp {
   font-size: 3.25rem;
@@ -13,9 +18,10 @@ html {
 
 
 p {
-  font-size: 1.05rem;
+  font-size: 1.20rem;
+  opacity: 0.92;
   @media (min-width: 500px) {
-    font-size: 1.10rem;
+    font-size: 1.15rem;
   }
 }
 
