@@ -7,7 +7,9 @@
           <p class="lead-in">
             <%- headline %>
           </p>
-          <p><a href="<%= demo_url %>" class="btn-large waves-effect waves-light accent-color">Try the Demo</a></p>
+          <p>
+            <%- partial('_shared_partials/demo-button', { button_text: 'Try The Demo'}) %>
+          </p>
         </div>
         <div class="col s12 l6 hero-col">
           <img class="responsive-img" src="/assets/images/hero.png" />
@@ -21,7 +23,7 @@
   <div class="container">
     <div class="row">
       <div class="col s12 center-align">
-        <span><a class="grey-text text-darken-2" href="#"><b>Latest Post:</b> How one condo easily achieved quorum and saved over $2500 with electronic proxies.</a></span>
+        <span><a class="grey-text text-darken-2" href="<%= case_study_url %>" target="_blank"><b>Latest Post:</b> How one condo easily achieved quorum and saved over $2500 with electronic proxies.</a></span>
       </div>
     </div>
   </div>

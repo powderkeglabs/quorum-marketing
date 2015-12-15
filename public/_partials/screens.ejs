@@ -5,7 +5,9 @@
         <h2>It's fast and super easy</h2>
         <p>Completing an electronic proxy is simple and takes only a few minutes, even for the those owners that aren't as "techie". All that's needed is a web browser and an internet connection, there's no app to download or install.</p>
         <p>But don't take our word for it...</p>
-        <p><a href="<%= demo_url %>" class="btn-large waves-effect waves-light accent-color">Try the Demo Yourself</a></p>
+        <p>
+          <%- partial('../_shared_partials/demo-button', { button_text: 'Try The Demo'}) %>
+        </p>
         <br>
       </div>
       <div class="flex-img flex-row-right">
