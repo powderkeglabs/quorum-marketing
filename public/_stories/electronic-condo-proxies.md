@@ -1,8 +1,15 @@
-*I'm on my condominium corporation's volunteer board of directors, so this is a bit of a personal project for PKL.*
+The story of one condo's success with electronic proxies
+---
+
+**Dec. 2, 2015 - by JJ Hiew**
+
+
+
+*This is an origin story of sorts, I'm a director on my condo's board. Quorum was created to solve a personal need...*
 
 ---
 
-As per the [Ontario Condominium Act](http://www.ontario.ca/laws/statute/98c19), every condo needs to hold an annual general meeting (AGM) for unit owners. The meeting is used to [conduct business that requires owners to vote](http://www.condoinformation.ca/owners-meetings-voting) such as the election new directors or the addition of new by-laws. It's similar to the AGM's held by traditional public corporations.  
+As per the [Ontario Condominium Act](http://www.ontario.ca/laws/statute/98c19), every condo needs to hold an annual general meeting (AGM) for unit owners. The meeting is used to [conduct business that requires owners to vote](http://www.condoinformation.ca/owners-meetings-voting), such as the election new directors or the addition of new by-laws. It's similar to the AGM's held by traditional public corporations.  
 
 ##### What is "Quorum"?
 Each meeting requires a minimum number of units to be present in order for it to be considered valid. The Condo Act requires quorum to be at least 25% of the units in a condo. Owners can either attend the meeting in person or be represented by proxy.
@@ -29,8 +36,8 @@ They ask owners to fill out a proxy and send it to the management office immedia
 
 Getting an owner to read the AGM informational package, fill out a proxy form, then drop it off at the management office is no simple task. It usually requires significant effort by the directors and management to canvas door-to-door and solicit owners for proxies.  
 
-##### *What?! You want *me* to canvas after a full day of work? Ain't NOBODY got time for that!*
-Directors are volunteers and often lack the time or will to canvas. I *definitely* don't want to spend the few precious hours I have in the evenings knocking on doors. Owners don't want their evenings to be disturbed either.
+##### What?! You want me to canvas after a full day of work? Ain't NOBODY got time for that!
+Directors are volunteers and often lack the time or will to canvas. I definitely don't want to spend the few precious hours I have in the evenings knocking on doors. Owners don't want their evenings to be disturbed either.
 
 And management shouldn’t be soliciting owners for political reasons.
 
@@ -38,15 +45,15 @@ There’s got to be a better way, and we had an idea...
 
 ---
 
-#### THE ELECTRONIC PROXY FORM
+### THE ELECTRONIC PROXY FORM
 We believed we could achieve quorum through proxies alone by:
 
 1. Making it even easier and more convenient for owners to submit them
 2. Giving owners a reason to care about quorum
 
-##### 1. Making it easy
+##### On Making it easy
 <div class="flex">
-![The Proxy Form](/assets/images/work/proxies/proxyform_ipad.jpg "The Proxy Form")
+![The Proxy Form](/assets/images/proxies/proxyform_ipad.jpg "The Proxy Form")
 *The Electronic Proxy*
 </div>
 
@@ -54,15 +61,17 @@ We created a simple and secure proxy form web application that only registered o
 
 But the electronic proxy is only effective if owners know to use it. Fortunately for us, our owners have opted ­in to email communications from the Corporation. We applied basic online email marketing techniques to inform owners about the proxy tool. An initial email was sent with a link to the electronic proxy, then automatic recurring emails would remind owners to fill out the form. Only owners that haven’t yet filled out the form would receive the reminders.
 
-##### 2. Giving owners a reason to care
+##### On Giving owners a reason to care
 Apathy is a powerful force; ease and convenience matters not unless owners care enough to take action. So let’s give them a reason to care about achieving quorum. It was important that our reminder emails educate owners on why it matters -- how quorum relates to their *money*.
 
 <div class="flex">
-![Our educational email reminders](/assets/images/work/proxies/quorum-email.jpg)
+![Our educational email reminders](/assets/images/proxies/quorum-email.jpg)
 *Our educational email reminders*
 </div>
 
 Holding a meeting is expensive, in our case it’s approximately $2500 in hard costs. Having reschedule the meeting would cost even more money. That’s $2500 multiplied by however many meeting attempts are required. It’s a crazy amount of time and money to waste, we made sure owners knew this.
+
+---
 
 #### The Results Of Our AGM Campaign?
 

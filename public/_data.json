@@ -1,8 +1,13 @@
 {
-  "about": {
-    "title": "About",
-    "description": "About PowderKeg Labs.",
-    "path": "about.html"
+  "stories": {
+    "title": "Quorum - Electronic Proxy Forms For Condominium Shareholder Meetings",
+    "snippet": "I'm a director at my condo corporation. And like many other condos, we've struggled to reach quorum at our owner meetings. That was until this year when we decided to experiment with basic email marketing and electronic proxy forms. Now our condo never has to worry about missing quorum again.",
+    "date": "December 2, 2015",
+    "image": "/assets/images/proxies/buildings.jpg",
+    "author": "JJ Hiew",
+    "tags": "Case Study",
+    "description": "Quorum - Electronic Proxy Forms For Condominium Shareholder Meetings",
+    "path": "stories.html"
   },
   "sitemap": {
     "layout": false
