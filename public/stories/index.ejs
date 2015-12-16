@@ -1,5 +1,5 @@
 <header class="blog-header">
-  <div class="fill-overlay flex">
+  <div class="header-fill-overlay flex">
     <div class="container">
       <div class="row">
         <div class="col s12 center-align flex">
@@ -16,12 +16,12 @@
     <div class="container">
       <div class="row flex">
 
-        <% for (var slug in public.blog._data) { %>
+        <% for (var slug in public.stories._data) { %>
           <%- partial('_item', {
-            title: public.blog._data[slug].title,
-            date: public.blog._data[slug].date,
-            snippet: public.blog._data[slug].snippet,
-            tags: public.blog._data[slug].tags,
+            title: public.stories._data[slug].title,
+            date: public.stories._data[slug].date,
+            snippet: public.stories._data[slug].snippet,
+            tags: public.stories._data[slug].tags,
             slug: slug
           }) %>
         <% }; %>

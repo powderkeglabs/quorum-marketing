@@ -29,7 +29,7 @@
 
     <%- partial("/_shared_partials/nav", {}) %>
 
-    <% if(current.path[0] == "blog" && current.source !== 'index') { %>
+    <% if(current.path[0] == "stories" && current.source !== 'index') { %>
       <%- partial(current.path[0] + "/_nest") %>
     <% } else { %>
       <%- yield %>
