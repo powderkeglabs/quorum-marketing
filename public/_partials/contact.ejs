@@ -1,4 +1,4 @@
-<section id="contact" class="contact">
+<section id="contact" class="contact" ng-app="quorumApp" ng-controller="requestController">
   <div class="container">
     <div class="row">
       <div class="col s12">
@@ -6,23 +6,25 @@
         <p>We're currently in beta and are working with select condos to trial the solution. If you're interested in participating, please fill out your contact info and we'll get back to you in 24 hours.</p>
       </div>
     </div>
-    <form>
+    <form name="requestForm" ng-submit="submitRequest(requestForm.$valid)" novalidate>
       <div class="row">
-        <div class="input-field col s12 m8">
+        <div class="input-field col s12 m8" ng-class="{ 'has-error': requestForm.name.$invalid && submitted }">
           <label>Your Name:</label>
-          <input type="text" name="name" id="name" required="true" placeholder="Frank Grimes"></input>
+          <input type="text" name="name" id="name" required placeholder="Frank Grimes" ng-model="request.name" ng-class="{ 'invalid': requestForm.name.$invalid && submitted }"></input>
+          <span class="error-text" ng-show="requestForm.name.$invalid && submitted">Name is required.</span>
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s12 m8">
+        <div class="input-field col s12 m8" ng-class="{ 'has-error': requestForm.email.$invalid && submitted }">
           <label>Your Email:</label>
-          <input type="email" name="email" required="true" placeholder="frank.grimes@emample.com"></input>
+          <input type="email" name="email" required placeholder="frank.grimes@emample.com" ng-model="request.email" ng-class="{ 'invalid': requestForm.email.$invalid && submitted }"></input>
+          <span class="error-text" ng-show="requestForm.email.$invalid && submitted">Email is required.</span>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12 m8">
-          <label>Your Phone Number:</label>
-          <input type="text" name="phone" required="true" placeholder="416-123-4567"></input>
+          <label>Your Phone Number (optional):</label>
+          <input type="text" name="phone" placeholder="416-123-4567"></input>
         </div>
       </div>
       <div class="row">

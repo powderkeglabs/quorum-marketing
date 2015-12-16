@@ -10,4 +10,16 @@
     padding-bottom: 8px;
     color: color('grey','darken-1');
   }
+
+  .has-error,
+  .has-error label {
+    color: $error-color;
+  }
+
+  .error-text {
+    top: -10px;
+    position: relative;
+    font-size: 12px;
+  }
+
 }
