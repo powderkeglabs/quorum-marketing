@@ -8,17 +8,17 @@
     </div>
     <form name="requestForm" ng-submit="submitRequest(requestForm.$valid)" novalidate>
       <div class="row">
-        <div class="input-field col s12 m8" ng-class="{ 'has-error': requestForm.name.$invalid && submitted }">
+        <div class="input-field col s12 m8" ng-class="{ 'has-error': requestForm.name.$invalid && msgStatus.submitted }">
           <label>Your Name:</label>
-          <input type="text" name="name" id="name" required placeholder="Frank Grimes" ng-model="request.name" ng-class="{ 'invalid': requestForm.name.$invalid && submitted }"></input>
-          <span class="error-text" ng-show="requestForm.name.$invalid && submitted">Name is required.</span>
+          <input type="text" name="name" id="name" required placeholder="Frank Grimes" ng-model="request.name" ng-class="{ 'invalid': requestForm.name.$invalid && msgStatus.submitted }"></input>
+          <span class="error-text" ng-show="requestForm.name.$invalid && msgStatus.submitted">Name is required.</span>
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s12 m8" ng-class="{ 'has-error': requestForm.email.$invalid && submitted }">
+        <div class="input-field col s12 m8" ng-class="{ 'has-error': requestForm.email.$invalid && msgStatus.submitted }">
           <label>Your Email:</label>
-          <input type="email" name="email" required placeholder="frank.grimes@emample.com" ng-model="request.email" ng-class="{ 'invalid': requestForm.email.$invalid && submitted }"></input>
-          <span class="error-text" ng-show="requestForm.email.$invalid && submitted">Email is required.</span>
+          <input type="email" name="email" required placeholder="frank.grimes@emample.com" ng-model="request.email" ng-class="{ 'invalid': requestForm.email.$invalid && msgStatus.submitted }"></input>
+          <span class="error-text" ng-show="requestForm.email.$invalid && msgStatus.submitted">Email is required.</span>
         </div>
       </div>
       <div class="row">
@@ -28,8 +28,33 @@
         </div>
       </div>
       <div class="row">
-        <div class="col s12">
+        <div class="col s12 spinner-block">
           <input type="submit" value="submit" class="btn accent-secondary-color"></input>
+          &nbsp;&nbsp;&nbsp;
+          <!-- Spinner -->
+          <div ng-show="showSpinner" ng-cloak class="preloader-wrapper small active">
+              <div class="spinner-layer spinner-green-only">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div><div class="gap-patch">
+                  <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+      <div class="row message-row" ng-show="msgStatus.submitted">
+        <!-- Error Message -->
+        <div class="col s12 msg-block error-block" ng-cloak ng-show="msgStatus.submitted && msgStatus.errors">
+          <span><b>Message Not Sent:</b></span>
+          <span ng-bind="msgStatus.message"><span>
+        </div>
+        <!-- Success Message -->
+        <div class="col s12 msg-block success-block" ng-cloak ng-show="msgStatus.submitted && msgStatus.success">
+          <span><b>Success:</b> Your message has been sent.<span>
         </div>
       </div>
     </form>
