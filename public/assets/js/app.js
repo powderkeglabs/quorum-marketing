@@ -46,11 +46,12 @@
           $timeout(function(){
             $scope.msgStatus.success = true;
             $scope.showSpinner = false;
+            $scope.request = {};  // reset the request
           }, 500);
         }, function(err){
           $scope.showSpinner = false;
           $scope.msgStatus.errors = true;
-          $scope.msgStatus.message = "Server Error" + err;
+          $scope.msgStatus.message = "Oops, there's a server error. Please call us instead.";
           console.log(err);
         });
       };
