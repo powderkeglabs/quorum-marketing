@@ -36,17 +36,16 @@
 
     </a>
     <ul class="right hide-on-med-and-down">
-      <li><a href="#">About</a></li>
-      <li><a href="#">Case Studies</a></li>
-      <li><a href="#">Team</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="stories.html">Stories</a></li>
+      <li><a href="/#how-it-works">How It Works</a></li>
+      <li><a href="/#faq">FAQ</a></li>
+      <li><a href="/#contact">Contact</a></li>
     </ul>
   </div>
 </nav>
 
 
-    
-      <header class="index-header">
+    <header class="index-header">
   <div class="flex header-fill-overlay">
     <div class="container">
       <div class="row flex">
@@ -74,7 +73,7 @@
   <div class="container">
     <div class="row">
       <div class="col s12 center-align">
-        <span><a class="grey-text text-darken-2" href="https://powderkeglabs.com/blog/electronic-condo-proxies" target="_blank"><b>Latest Post:</b> How one condo easily achieved quorum and saved over $2500 with electronic proxies.</a></span>
+        <span><a class="grey-text text-darken-2" href="/stories.html" target="_blank"><b>Latest Post:</b> How one condo easily achieved quorum and saved over $2500 with electronic proxies.</a></span>
       </div>
     </div>
   </div>
@@ -188,7 +187,7 @@
 
       <div class="flex-item faq-item">
         <span class="question">1. Is this really legal?</span>
-        <p class="answer">
+        <p class="answer" style="background-color: rgb(255, 245, 116)">
           Yes! We have obtained legal opinions from a number of top
           Condominium Law Firms in Toronto. Our electronic proxies comply with
           Subsection 51 and 52 of the Condominium Act, 1998. In fact, these
@@ -232,20 +231,22 @@
   <div class="container">
     <div class="row flex">
 
-      <div class="benefit flex flex-item badge-flex center-align">
+      <div class="testimonial flex flex-item badge-flex center-align">
         <img class="person-img" src="/assets/images/team/ben.jpg">
-        <p><i>"We went from barely making quorum at last year's AGM to easily
-          making it this year. The electronic proxies were enough for quorum
-          alone. Besides the money saved from not having to reschedule a
-          meeting, the best part was that we didn't have to do any canvasing.
-          We're definitely using this for future meetings."</i></p>
-        <p>Ed Bezeau, President of MTCC 1371</p>
-        <span class="secondary-button">
-          <a href="https://powderkeglabs.com/blog/electronic-condo-proxies" class="btn accent-secondary-color" target="_blank">Read the Case Study</a>
-        </span>
+        <span class="person-name">Wilmer Gomez, RCM</span>
+        <p class="person-quote">"In my six years as a condo manager, this is the first time I’ve ever seen an AGM reach quorum before it was even held. We started getting proxies as soon as owners were notified. It was such a quick and easy process, all I needed to do was print out the completed proxies."</p>
       </div>
 
     </div>
+
+    <div class="row">
+      <div class="col s12 center-align">
+        <span class="secondary-button">
+          <a href="/stories.html" class="btn accent-secondary-color" target="_blank">Read the Case Study</a>
+        </span>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -260,21 +261,21 @@
     </div>
     <form name="requestForm" ng-submit="submitRequest(requestForm.$valid)" novalidate>
       <div class="row">
-        <div class="input-field col s12 m8" ng-class="{ 'has-error': requestForm.name.$invalid && msgStatus.submitted && !msgStatus.success }">
+        <div class="input-field col s12 m6" ng-class="{ 'has-error': requestForm.name.$invalid && msgStatus.submitted && !msgStatus.success }">
           <label>Your Name:</label>
           <input type="text" name="name" id="name" required placeholder="Frank Grimes" ng-model="request.name" ng-class="{ 'invalid': requestForm.name.$invalid && msgStatus.submitted && !msgStatus.success }">
           <span class="error-text" ng-show="requestForm.name.$invalid && msgStatus.submitted && !msgStatus.success">Name is required.</span>
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s12 m8" ng-class="{ 'has-error': requestForm.email.$invalid && msgStatus.submitted && !msgStatus.success }">
+        <div class="input-field col s12 m6" ng-class="{ 'has-error': requestForm.email.$invalid && msgStatus.submitted && !msgStatus.success }">
           <label>Your Email:</label>
           <input type="email" name="email" required placeholder="frank.grimes@emample.com" ng-model="request.email" ng-class="{ 'invalid': requestForm.email.$invalid && msgStatus.submitted && !msgStatus.success }">
           <span class="error-text" ng-show="requestForm.email.$invalid && msgStatus.submitted && !msgStatus.success">Email is required.</span>
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s12 m8">
+        <div class="input-field col s12 m6">
           <label>Your Phone Number (optional):</label>
           <input type="text" name="phone" ng-model="request.phone" placeholder="416-123-4567">
         </div>
@@ -315,12 +316,11 @@
 
 
 </main>
-    
 
     <footer class="page-footer">
   <div class="container">
     <div class="row">
-      <div class="col l6 s12">
+      <div class="col l8 s12">
         <h5>
         <a href="/" class="brand-logo">
           
@@ -340,14 +340,13 @@
         </span>
         <br><br>
       </div>
-      <div class="col l4 offset-l2 s12 white-text footer-links">
+      <div class="col l4 s12 white-text footer-links">
         <h5 class="white-text">Links</h5>
         <ul>
-          <li><a class="grey-text text-lighten-2" href="#">How it Works</a></li>
-          <li><a class="grey-text text-lighten-2" href="#">Features</a></li>
-          <li><a class="grey-text text-lighten-2" href="#">FAQ</a></li>
-          <li><a class="grey-text text-lighten-2" href="#">Case Study</a></li>
-          <li><a class="grey-text text-lighten-2" href="#">Contact</a></li>
+          <li><a class="grey-text text-lighten-2" href="stories.html">Stories</a></li>
+          <li><a class="grey-text text-lighten-2" href="/#how-it-works">How it Works</a></li>
+          <li><a class="grey-text text-lighten-2" href="/#faq">FAQ</a></li>
+          <li><a class="grey-text text-lighten-2" href="/#contact">Contact</a></li>
         </ul>
       </div>
     </div>
