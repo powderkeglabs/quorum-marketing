@@ -1,9 +1,6 @@
-The story of one condo's success with electronic proxies
----
+### The story of one condo's success with electronic proxies
 
 **Dec. 2, 2015 - by JJ Hiew**
-
-
 
 *This is an origin story of sorts, I'm a director on my condo's board. Quorum was created to solve a personal need...*
 
@@ -53,7 +50,7 @@ We believed we could achieve quorum through proxies alone by:
 
 ##### On Making it easy
 <div class="flex">
-![The Proxy Form](/assets/images/proxies/proxyform_ipad.jpg "The Proxy Form")
+![The Proxy Form](/assets/images/hero.png "The Proxy Form")
 *The Electronic Proxy*
 </div>
 
@@ -73,7 +70,7 @@ Holding a meeting is expensive, in our case it’s approximately $2500 in hard c
 
 ---
 
-#### The Results Of Our AGM Campaign?
+### The Results Of Our AGM Campaign?
 
 Below are our AGM attendance numbers from the last two years. Our minimum for quorum is 25% or approximately 50 owners.
 
@@ -92,7 +89,9 @@ Below are our AGM attendance numbers from the last two years. Our minimum for qu
   </tbody>
 </table>
 
-#### Success!
+
+### Success!
+
 Proxies in 2015 almost doubled those from 2014 -- they accounted for approximately 29% of owners represented at this year's AGM -- enough for us to achieve quorum on them alone. And because the forms are automatically sent to the Corporation, we knew we reached quorum days before our AGM.
 
 The results speak for themselves, owners definitely took to the online proxies.
@@ -102,24 +101,28 @@ Contrast this to our 2014 numbers, we did not know what our attendance numbers w
 While the overall numbers in 2015 may not look that impressive, it’s important to note that we launched the online proxy tool only 7 days before our AGM. I’m confident our numbers would be higher had we launched earlier.
 
 
-#### The best thing?
+### The best thing?
 We didn’t have to do any canvassing and owners didn't need to be disturbed. The directors and management barely lifted a finger. Ok, so we did some keyboard jockeying, but that can be done at home in our pajamas.
+
+> *"In my six years as a condo manager, this is the first time I’ve ever seen an AGM reach quorum before it was even held. We started getting proxies as soon as owners were notified. It was such a quick and easy process, all I needed to do was print out the completed proxies."*
+>
+> -- Wilmer Gomez, RCM, Brookfield
+
 
 We’re definitely using this strategy for future meetings.
 
 I’m confident we’ll never have to fear about missing quorum again.
 
 
-#### Is This Legal?
+### Is This Legal?
 Yes! We have consulted with a number of top condominium law firms in Toronto who have confirmed that these electronic proxies are legally valid. In fact, the firms agreed that electronic proxies, when done correctly, are better at preventing condo proxy fraud than through traditional paper forms.
 
 Electronic Proxies aren't a new idea either, they've been used for public corporation shareholder meetings for the last  decade or two. A [Proxy Protocol](https://www.stac.ca/Public/PublicShowFile.aspx?fileID=229) is even defined by the [Security Transfers Association of Canada](https://www.stac.ca) for electronic voting.
 
-
-#### Want to see a demo?
+##### Want to see a demo?
 Check out http://proxy.powderkeglabs.com.
 
 Note that the final email to the condo will use the same one entered into the "Your email address" field. This way you can see the full end-­to-­end workflow
 
-#### Want to use electronic proxies at your condo?
-Easy, [send us an email](mailto:kaboom@powderkeglabs.com) and we'll help you set it up.
+##### Want to use electronic proxies at your condo?
+Easy, contact us and we'll help you set it up.

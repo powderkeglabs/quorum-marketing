@@ -1,5 +1,17 @@
+.testimonial {
+  padding: 10px;
+}
 .person-img {
-  width: 175px;
-  height: 175px;
+  width: 125px;
+  height: 125px;
   border-radius: 50%;
+}
+
+.person-name {
+  margin-top: 10px;
+  font-size: 1.25rem;
+}
+
+.person-quote {
+  // font-size: 1.05rem;
 }

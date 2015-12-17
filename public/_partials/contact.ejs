@@ -8,21 +8,21 @@
     </div>
     <form name="requestForm" ng-submit="submitRequest(requestForm.$valid)" novalidate>
       <div class="row">
-        <div class="input-field col s12 m8" ng-class="{ 'has-error': requestForm.name.$invalid && msgStatus.submitted && !msgStatus.success }">
+        <div class="input-field col s12 m6" ng-class="{ 'has-error': requestForm.name.$invalid && msgStatus.submitted && !msgStatus.success }">
           <label>Your Name:</label>
           <input type="text" name="name" id="name" required placeholder="Frank Grimes" ng-model="request.name" ng-class="{ 'invalid': requestForm.name.$invalid && msgStatus.submitted && !msgStatus.success }"></input>
           <span class="error-text" ng-show="requestForm.name.$invalid && msgStatus.submitted && !msgStatus.success">Name is required.</span>
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s12 m8" ng-class="{ 'has-error': requestForm.email.$invalid && msgStatus.submitted && !msgStatus.success }">
+        <div class="input-field col s12 m6" ng-class="{ 'has-error': requestForm.email.$invalid && msgStatus.submitted && !msgStatus.success }">
           <label>Your Email:</label>
           <input type="email" name="email" required placeholder="frank.grimes@emample.com" ng-model="request.email" ng-class="{ 'invalid': requestForm.email.$invalid && msgStatus.submitted && !msgStatus.success }"></input>
           <span class="error-text" ng-show="requestForm.email.$invalid && msgStatus.submitted && !msgStatus.success">Email is required.</span>
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s12 m8">
+        <div class="input-field col s12 m6">
           <label>Your Phone Number (optional):</label>
           <input type="text" name="phone" ng-model="request.phone" placeholder="416-123-4567"></input>
         </div>

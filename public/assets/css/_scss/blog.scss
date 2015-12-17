@@ -11,8 +11,12 @@ section.article {
   background-size: cover;
 }
 
-.blog-header .snippet {
-  font-size: 1.5rem;
+.blog-header .snippet,
+.blog-header .snippet_author {
+  font-size: 1.25rem;
+  @media(min-width: 650px){
+    font-size: 1.5rem;
+  }
 }
 
 /// *********************************************************************
@@ -39,6 +43,7 @@ article {
     margin-top: 20px;
     color: $text-primary-color;
     opacity: 1;
+    font-size: 1.15rem;
   }
 
   h1, h2, h3, h4, h5 {
@@ -51,11 +56,12 @@ article {
   }
 
   h4 {
-    font-size: 24px;
+    // font-size: 24px;
+    // font-size
   }
 
   h5 {
-    font-size: 20px;
+    // font-size: 20px;
     color: lighten($text-primary-color, 30%);
     // font-weight: 400;
   }
