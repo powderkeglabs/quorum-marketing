@@ -31,9 +31,87 @@
 
 <main>
 
-  <%- partial('_partials/how_it_works', {}) %>
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center-align">
+          <%# <h2>Benefits</h2>%>
+        </div>
+      </div>
+      <div class="row flex how-row">
 
-  <%- partial('_partials/screens', {}) %>
+        <%- partial('_shared_partials/icon-text-block', {
+          icon: 'fa-line-chart',
+          size: 'fa-3x',
+          heading: 'Increased Turnouts',
+          description: "We've seen an average 50% increases in proxy submissions compared to paper proxies."
+        }); %>
+
+        <%- partial('_shared_partials/icon-text-block', {
+          icon: 'fa-clock-o',
+          size: 'fa-3x',
+          heading: "Save Time",
+          description: "We take care of all the work -- from creating the online proxy, to distribution and tallying."
+        }); %>
+
+        <%- partial('_shared_partials/icon-text-block', {
+          icon: 'fa-envelope',
+          size: 'fa-3x',
+          heading: "Get Email Consents",
+          description: "Collect electronic notification consent from your owners for corporation communication needs."
+        }); %>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="screens">
+    <div class="container">
+      <div class="row flex">
+        <div class="flex-text flex-row-left left-align">
+          <h2>It's fast and super easy</h2>
+          <p>Completing an electronic proxy is simple and takes only a few minutes, even for the those owners that aren't as "techie". All that's needed is a web browser and an internet connection, there's no app to download or install.</p>
+          <p>But don't take our word for it...</p>
+          <p>
+            <%- partial('_shared_partials/demo-button', { button_text: 'Try The Demo'}) %>
+          </p>
+          <br>
+        </div>
+        <div class="flex-img flex-row-right">
+          <img src="/assets/images/quorum3.gif" class="responsive-img gif-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screens">
+    <div class="container">
+      <div class="row flex">
+        <div class="flex-text flex-row-right">
+          <h2>Say goodbye to canvasing</h2>
+          <p>Our smart email system will periodically remind owners to complete their proxy, but only if they haven't already done so. You don't want to canvas; owners don't want to be disturbed. Now everyone can enjoy their Netflix in peace. </p>
+        </div>
+        <div class="flex-img flex-row-left">
+          <img src="/assets/images/quorum-email.png" class="responsive-img screens-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="screens">
+    <div class="container">
+      <div class="row flex">
+        <div class="flex-text flex-row-left">
+          <h2>Real-time proxy tabulation</h2>
+          <p>You get the proxies the instant owners complete it. Just imagine what it's like to know you've reached quorum days or weeks before your meeting even starts. We'll even notify you the second you've reached quorum.</p>
+        </div>
+        <div class="flex-img flex-row-right">
+          <img src="/assets/images/tabulate.png" class="responsive-img screens-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <%- partial('_partials/faq', {}) %>
 
