@@ -44,7 +44,7 @@
           icon: 'fa-line-chart',
           size: 'fa-3x',
           heading: 'Get Quorum',
-          description: "We've seen an average 50% increase in owner proxies year-to-year when electronic forms are available."
+          description: "We've seen 100% increases in proxy submissions when electronic forms become available."
         }); %>
 
         <%- partial('_shared_partials/icon-text-block', {
@@ -57,8 +57,8 @@
         <%- partial('_shared_partials/icon-text-block', {
           icon: 'fa-envelope',
           size: 'fa-3x',
-          heading: "Get Email Consents",
-          description: "Collect electronic notification consent from your owners for the Corporation's communication needs."
+          heading: "Collect Email Consent",
+          description: "Owners can opt-in to electronic notifications, paving the way for your Corp's future communication needs."
         }); %>
 
       </div>
@@ -69,8 +69,8 @@
     <div class="container">
       <div class="row flex">
         <div class="flex-text flex-row-left left-align">
-          <h2>It's fast and super easy</h2>
-          <p>Completing an electronic proxy is simple and takes only a few minutes, even for the those owners that aren't as "techie". All that's needed is a web browser and an internet connection, there's no app to download or install.</p>
+          <h2>It's fast and super easy...</h2>
+          <p>Completing an electronic proxy is simple and only takes a few minutes, even for the those owners that aren't as "techie". All that's needed is a web browser and an internet connection, there's no app to download or install.</p>
           <p>But don't take our word for it...</p>
           <p>
             <%- partial('_shared_partials/demo-button', { button_text: 'Try The Demo'}) %>
@@ -88,8 +88,8 @@
     <div class="container">
       <div class="row flex">
         <div class="flex-text flex-row-right">
-          <h2>Say goodbye to canvasing</h2>
-          <p>Our smart email system will periodically remind owners to complete their proxy, but only if they haven't already done so. You don't want to canvas; owners don't want to be disturbed. Now everyone can enjoy their Netflix in peace. </p>
+          <h2>Canvasing not required...</h2>
+          <p>Meetings are too expensive to adjourn, by-laws too critical not to pass; it's important to educate owners as to why. Our smart email system will periodically remind owners to complete their proxy, but only if they haven't already done so.</p>
         </div>
         <div class="flex-img flex-row-left">
           <img src="/assets/images/quorum-email.png" class="responsive-img screens-img" />
@@ -102,8 +102,12 @@
     <div class="container">
       <div class="row flex">
         <div class="flex-text flex-row-left">
-          <h2>Real-time proxy tabulation</h2>
-          <p>You get the proxies the instant owners complete it. Just imagine what it's like to know you've reached quorum days or weeks before your meeting even starts. We'll also notify you the second you've reached important thresholds.</p>
+          <h2>Save time, money, and worry...</h2>
+          <p>We do all the setup work, just send us a copy of your paper proxy form.</p>
+          <p>Once the form is live, you'll get proxies the instant an owner completes it. Just imagine what it's like knowing you've reached quorum days or weeks before your meeting even starts. We'll also notify you when you've achieved important voting thresholds.</p>
+          <p>
+            <a href="/how-it-works.html" class="btn btn-secondary">Learn More</a>
+          </p>
         </div>
         <div class="flex-img flex-row-right">
           <img src="/assets/images/tabulate.png" class="responsive-img screens-img" />
@@ -113,10 +117,88 @@
   </section>
 
 
-  <%- partial('_partials/faq', {}) %>
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center-align">
+          <h2>FAQ</h2>
+        </div>
+      </div>
+      <div class="flex row">
 
-  <%- partial('_partials/testimonials', {}) %>
+        <div class="flex-item faq-item">
+          <span class="question">1. Is this compliant with the Condo Act?</span>
+          <p class="answer" style="background-color: rgb(255, 245, 116)">
+            Yes! We have obtained legal opinions from a number of top
+            Condominium Law Firms in Toronto. Our electronic proxies comply with
+            Subsection 51 and 52 of the Condominium Act, 1998, as well as the
+            upcoming Bill 106 changes.
+          </p>
+        </div>
 
-  <%- partial('_partials/contact', {}) %>
+        <div class="flex-item faq-item">
+          <span class="question">2. How is fraud prevented?</span>
+          <p class="answer">
+            Our system emails a confirmation link to owners after their proxy is
+            submitted, the owner must click on this link. Submissions are also
+            verified against the Corporation's owner
+            registry. Additionally, forms can be protected with access codes
+            unique to each unit owner.
+          </p>
+        </div>
+
+        <div class="flex-item faq-item">
+          <span class="question">3. How do we get the completed proxies?</span>
+          <p class="answer">Proxies are emailed to your property manager the
+            instant an owner completes it. We also send you all completed forms,
+            in PDF format, on the day of the meeting.</p>
+        </div>
+
+        <div class="flex-item faq-item">
+          <span class="question">4. How long does it take to setup?</span>
+          <p class="answer">
+            Typically within a few business days, take a look at <a href="/how-it-works.html">How It Works</a> for more details.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="testimonials">
+    <div class="container">
+      <div class="row flex">
+
+        <div class="testimonial flex flex-item badge-flex center-align">
+          <img class="person-img" src="/assets/images/team/ben.jpg" />
+          <span class="person-name">Wilmer Gomez, RCM</span>
+          <p class="person-quote">"In my six years as a condo manager, this is the first time I’ve ever seen an AGM reach quorum before it was even held. We started getting proxies as soon as owners were notified. It was such a quick and easy process, all I needed to do was print out the completed proxies."</p>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col s12 center-align">
+          <span class="secondary-button">
+            <a href="/stories.html" class="btn btn-secondary">Read the Case Study</a>
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center-align">
+          <h2>Ready to Get Started?</h2>
+          <%# <p>Contact us now to get started.</p>%>
+          <p><a href="/contact.html" class="btn btn-large accent-color">Contact Us</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </main>

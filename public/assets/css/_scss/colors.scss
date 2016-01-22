@@ -2,7 +2,8 @@ $primary-color: color("light-blue", "base");
 $primary-color-light: lighten($primary-color, 15%);
 $primary-color-dark: darken($primary-color, 15%);
 $accent-color: color('red', 'accent-2');
-$accent-color-secondary: color('blue-grey','base');
+// $accent-color-secondary: color('blue-grey','base');
+$accent-color-secondary: $primary-color-dark;
 
 $secondary-color: color("red", "base") !default;
 $success-color: color("green", "base") !default;

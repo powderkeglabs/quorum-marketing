@@ -52,6 +52,23 @@ main > section:nth-child(odd) {
   background-color: lighten($button-color, 5%);
 }
 
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid $accent-color-secondary;
+  color: $accent-color-secondary;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+.btn-secondary:hover {
+  background-color: $accent-color-secondary;
+}
+
+// .btn-contact {
+//   background-color: transparent;
+//   border: 1px solid $accent-color;
+// }
+
 .flex-text {
   order: 1;
 }
