@@ -7,7 +7,6 @@ html {
 
 .uvp {
   font-size: 2.25rem;
-  text-transform: capitalize;
 }
 
 .lead-in {
@@ -34,4 +33,8 @@ h3 {
 
 h4 {
   color: lighten($text-primary-color, 30%);
+}
+
+.contact-email {
+  font-size: 1.5rem;
 }

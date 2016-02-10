@@ -8,7 +8,7 @@
             <%- headline %>
           </p>
           <p>
-            <%- partial('_shared_partials/demo-button', { button_text: 'Try The Demo'}) %>
+            <a href="<%=contact_url %>" class="btn btn-large waves-effect waves-light accent-color">Get Started</a>
           </p>
         </div>
         <div class="col s12 l6 hero-col">
@@ -23,7 +23,9 @@
   <div class="container">
     <div class="row">
       <div class="col s12 center-align">
-        <span><a class="grey-text text-darken-2" href="<%= case_study_url %>" target="_blank"><b>Latest Post:</b> How one condo easily achieved quorum and saved over $2500 with electronic proxies.</a></span>
+        <span>
+          <a class="grey-text text-darken-2" href="<%= case_study_url %>" target="_blank"><b>Latest Post:</b> How one condo easily achieved quorum and saved over $2500 with electronic proxies.</a>
+        </span>
       </div>
     </div>
   </div>
@@ -33,17 +35,12 @@
 
   <section class="how-it-works" id="how-it-works">
     <div class="container">
-      <div class="row">
-        <div class="col s12 center-align">
-          <%# <h2>Benefits</h2>%>
-        </div>
-      </div>
       <div class="row flex how-row">
 
         <%- partial('_shared_partials/icon-text-block', {
           icon: 'fa-line-chart',
           size: 'fa-3x',
-          heading: 'Get Quorum',
+          heading: 'Meet Quorum',
           description: "We've seen 100% increases in proxy submissions when electronic forms become available."
         }); %>
 
@@ -72,9 +69,7 @@
           <h2>It's fast and super easy...</h2>
           <p>Completing an electronic proxy is simple and only takes a few minutes, even for the those owners that aren't as "techie". All that's needed is a web browser and an internet connection, there's no app to download or install.</p>
           <p>But don't take our word for it...</p>
-          <p>
-            <%- partial('_shared_partials/demo-button', { button_text: 'Try The Demo'}) %>
-          </p>
+          <p><a href="<%= demo_url %>" target="_blank" class="btn btn-large btn-secondary">Try the Demo</a></p>
           <br>
         </div>
         <div class="flex-img flex-row-right">
@@ -106,7 +101,7 @@
           <p>We do all the setup work, just send us a copy of your paper proxy form.</p>
           <p>Once the form is live, you'll get proxies the instant an owner completes it. Just imagine what it's like knowing you've reached quorum days or weeks before your meeting even starts. We'll also notify you when you've achieved important voting thresholds.</p>
           <p>
-            <a href="/how-it-works.html" class="btn btn-secondary">Learn More</a>
+            <!-- <a href="/how-it-works.html" class="btn btn-large btn-secondary">Learn More</a> -->
           </p>
         </div>
         <div class="flex-img flex-row-right">
@@ -128,9 +123,9 @@
 
         <div class="flex-item faq-item">
           <span class="question">1. Is this compliant with the Condo Act?</span>
-          <p class="answer" style="background-color: rgb(255, 245, 116)">
-            Yes! We have obtained legal opinions from a number of top
-            Condominium Law Firms in Toronto. Our electronic proxies comply with
+          <p class="answer">
+            Yes! We have obtained legal opinion from a top
+            Condominium Law Firm in Toronto. Our electronic proxies comply with
             Subsection 51 and 52 of the Condominium Act, 1998, as well as the
             upcoming Bill 106 changes.
           </p>
@@ -168,34 +163,31 @@
 
   <section id="testimonials">
     <div class="container">
-      <div class="row flex">
-
-        <div class="testimonial flex flex-item badge-flex center-align">
-          <img class="person-img" src="/assets/images/team/ben.jpg" />
-          <span class="person-name">Wilmer Gomez, RCM</span>
-          <p class="person-quote">"In my six years as a condo manager, this is the first time I’ve ever seen an AGM reach quorum before it was even held. We started getting proxies as soon as owners were notified. It was such a quick and easy process, all I needed to do was print out the completed proxies."</p>
-        </div>
-
-      </div>
-
       <div class="row">
-        <div class="col s12 center-align">
-          <span class="secondary-button">
-            <a href="/stories.html" class="btn btn-secondary">Read the Case Study</a>
-          </span>
+        <div class="testimonial">
+          <p class="person-quote">
+            "In my six years as a condo manager, this is the first time I’ve ever seen an AGM reach quorum before it was even held."
+            <br><span class="person-name">-- Wilmer Gomez, RCM, Brookfield</span></p>
         </div>
       </div>
-
+      <div class="row">
+        <div class="testimonial">
+          <p class="person-quote">
+            "It made reaching quorum so easy. We intend to continue using the electronic proxy for future meetings."
+          <br><span class="person-name">-- Ed Bezeau, President, MTCC 1371</span></p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section>
+  <section id="contact">
     <div class="container">
       <div class="row">
         <div class="col s12 center-align">
           <h2>Ready to Get Started?</h2>
-          <%# <p>Contact us now to get started.</p>%>
-          <p><a href="/contact.html" class="btn btn-large accent-color">Contact Us</a></p>
+          <p>It's just a few simple steps, but first, let's chat. Send us an email at...</p>
+          <!-- <p><a href="/contact.html" class="btn btn-large accent-color">Contact Us Now</a></p> -->
+          <p class="contact-email"><b><a href="mailto:contact@getquorum.com">contact@getquorum.com</a></b></p>
         </div>
       </div>
     </div>

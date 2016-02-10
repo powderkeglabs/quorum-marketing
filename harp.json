@@ -3,13 +3,14 @@
     "title": "Quorum - Electronic Proxies for Condo Meetings",
     "description": "",
     "site_name": "Quorum",
-    "uvp": "Getting quorum and passing by-laws just got easier",
-    "headline": "Simple, secure, and legally valid electronic proxies & online voting for condominium owner meetings.",
+    "uvp": "Meeting Quorum and Passing By-Laws Just Got Easier",
+    "headline": "Simple, legally valid electronic proxies and online voting for condominium meetings.",
     "path": "",
     "image": "",
     "author": "PowderKeg Labs",
     "demo_url": "http://proxy.powderkeglabs.com",
-    "case_study_url": "/stories.html"
+    "case_study_url": "/stories.html",
+    "contact_url": "/#contact"
 
   }
 }
