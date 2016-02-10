@@ -2,11 +2,21 @@
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
     <loc>http://powderkeglabs.com/</loc>
     <changefreq>daily</changefreq>
-    <lastmod>2015-12-17T02:15:25.172Z</lastmod>
+    <lastmod>2016-02-10T07:43:49.766Z</lastmod>
+</url>
+<url>
+    <loc>http://powderkeglabs.com/privacy</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2016-02-10T07:43:49.766Z</lastmod>
 </url>
 <url>
     <loc>http://powderkeglabs.com/stories</loc>
     <changefreq>daily</changefreq>
     <lastmod>2015-12-02T05:00:00.000Z</lastmod>
+</url>
+<url>
+    <loc>http://powderkeglabs.com/terms-of-use</loc>
+    <changefreq>daily</changefreq>
+    <lastmod>2016-02-10T07:43:49.767Z</lastmod>
 </url>
 </urlset>
