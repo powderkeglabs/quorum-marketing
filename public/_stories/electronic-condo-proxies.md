@@ -120,9 +120,9 @@ Yes! We have consulted with a number of top condominium law firms in Toronto who
 Electronic Proxies aren't a new idea either, they've been used for public corporation shareholder meetings for the last  decade or two. A [Proxy Protocol](https://www.stac.ca/Public/PublicShowFile.aspx?fileID=229) is even defined by the [Security Transfers Association of Canada](https://www.stac.ca) for electronic voting.
 
 ##### Want to see a demo?
-Check out http://proxy.powderkeglabs.com.
+Check out https://demo.getquorum.com.
 
 Note that the final email to the condo will use the same one entered into the "Your email address" field. This way you can see the full end-­to-­end workflow
 
 ##### Want to use electronic proxies at your condo?
-Easy, contact us and we'll help you set it up.
+Easy, [contact us](/#contact) and we'll help you set it up.

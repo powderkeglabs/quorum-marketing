@@ -52,15 +52,14 @@ a {
   color: $accent-color;
 }
 
-.header-fill-overlay{
-  min-height: 450px;
+.fill-overlay{
   height: 100%;
   width: 100%;
   background: rgba(2, 136, 209, 0.75)
 }
 
-.fill-overlay{
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.30);
+.header-fill-overlay{
+  @extend .fill-overlay;
+  min-height: 450px;
+
 }
