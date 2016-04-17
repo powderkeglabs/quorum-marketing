@@ -106,11 +106,3 @@ main > section:nth-child(odd) {
     text-align: right;
   }
 }
-
-.news {
-  border-bottom: 1px solid color('grey', 'lighten-2');
-  .row {
-    padding: 0px;
-    margin: 0px;
-  }
-}
