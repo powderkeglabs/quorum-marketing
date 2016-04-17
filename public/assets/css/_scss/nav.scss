@@ -11,3 +11,14 @@ nav a.brand-logo {
 nav a.brand-logo span.full {
   padding-left: 5px;
 }
+
+.side-nav__brand-logo {
+  height: 175px;
+  background-color: $primary-color-dark;
+}
+
+.side-nav__brand-logo a,
+.side-nav__brand-logo a:hover {
+  color: $text-secondary-color;
+  background-color: $primary-color-dark;
+}
