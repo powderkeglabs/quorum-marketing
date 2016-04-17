@@ -1,9 +1,14 @@
 <nav role="naviation">
-  <div class="nav-wrapper container">
-    <a href="/" class="brand-logo">
-      <%- partial('logo.ejs', {}) %>
-    </a>
+  <div class="nav-wrapper">
+    <a href="/" class="brand-logo"><%- partial('logo.ejs', {}) %></a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
+      <li><a href="<%- demo_url%>">Demo</a></li>
+      <li><a href="stories.html">Stories</a></li>
+      <li><a href="/#faq">FAQ</a></li>
+      <li><a href="<%=contact_url %>">Contact</a></li>
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
       <li><a href="<%- demo_url%>">Demo</a></li>
       <li><a href="stories.html">Stories</a></li>
       <li><a href="/#faq">FAQ</a></li>

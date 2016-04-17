@@ -1,11 +1,11 @@
 nav {
   background-color: $primary-color-dark;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 nav a.brand-logo {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
+  font-weight: 300;
 }
 
 nav a.brand-logo span.full {
