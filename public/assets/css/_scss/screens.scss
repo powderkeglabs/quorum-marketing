@@ -9,8 +9,13 @@
   }
 
   .gif-img {
-    // width: 95%;
     border: 10px solid color('grey', 'lighten-2');
+    max-width: 350px;
+  }
+
+  .fa.notice-icon {
+    padding: 10px;
+    opacity: 0.87;
   }
 
 }
