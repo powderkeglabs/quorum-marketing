@@ -24,9 +24,10 @@
     <div class="row">
       <div class="col s12 center-align">
         <span class="news--post">
-          <b>Latest Post:</b>
           <a class="grey-text text-darken-4" href="<%= case_study_url %>" target="_blank">
-            How we helped a 300-unit condo pass a critical Bylaw.</a>
+            <b>Apr. 16, 2016:</b>
+             Read about how we helped a 300-unit condo pass a critical Bylaw.
+           </a>
         </span>
       </div>
     </div>
@@ -40,24 +41,24 @@
       <div class="row">
 
         <%- partial('_shared_partials/benefit', {
-          icon: 'fa-line-chart',
+          icon: 'fa-users',
           size: 'fa-3x',
-          heading: 'Meet Quorum',
-          description: "We've seen 100% increases in proxy submissions when electronic forms become available."
+          heading: 'Increase Engagement',
+          description: "Increased owner representation makes reaching quorum at meetings easier."
         }); %>
 
         <%- partial('_shared_partials/benefit', {
           icon: 'fa-check',
           size: 'fa-3x',
-          heading: "Pass By-laws",
-          description: "Owners can cast their votes on the forms, making it easier to reach thresholds for passing by-laws."
+          heading: "Pass Important Bylaws",
+          description: "Owners can cast their votes online making it much easier to pass bylaws."
         }); %>
 
         <%- partial('_shared_partials/benefit', {
-          icon: 'fa-envelope',
+          icon: 'fa-hourglass',
           size: 'fa-3x',
-          heading: "Collect Email Consent",
-          description: "Owners can opt-in to electronic notifications, paving the way for your Corp's future communication needs."
+          heading: "Save time and effort",
+          description: "Reaching your thresholds means you won't have to hold the same meeting again."
         }); %>
 
       </div>
