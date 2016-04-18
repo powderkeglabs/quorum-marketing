@@ -1,0 +1,27 @@
+/// *********************************************************************
+/// BLOG LIST VIEW
+/// *********************************************************************
+.stories-header {
+  background-image: url('/assets/images/toronto1.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 300px;
+}
+
+.stories-header .header-fill-overlay{
+  min-height: 300px;
+}
+
+.stories__card--date {
+  display: block;
+  padding-bottom: 10px;
+}
+.stories__card--action a{
+  color: $accent-color !important;
+}
+
+@media (min-width: 650px) {
+  .stories__card--content {
+    min-height: 220px;
+  }
+}

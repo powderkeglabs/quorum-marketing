@@ -1,16 +1,9 @@
-<header class="blog-header">
+<header class="stories-header">
   <div class="header-fill-overlay flex">
     <div class="container">
       <div class="row">
         <div class="col s12 center-align">
-          <p>
-            <i class="fa fa-quote-left"></i>
-              <span class="snippet"><%-snippet%></span>
-            <i class="fa fa-quote-right"></i>
-          </p>
-          <span class="snippet_author">
-            -- <%- snippet_author %>
-          </span>
+          <h2>Case Studies</h2>
         </div>
       </div>
     </div>
@@ -18,12 +11,35 @@
 </header>
 
 <main>
-  <section class="article">
+  <section class="stories">
     <div class="container">
-      <div class="col s12">
-        <article>
-          <%- partial('_stories/electronic-condo-proxies', {}) %>
-        </article>
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="stories__card card">
+            <div class="stories__card--content card-content">
+              <span class="card-title">Passing a Bylaw</span>
+              <span class="stories__card--date">April 16, 2016</span>
+              <p>Read about how we helped a 300-unit condo pass a critical bylaw affecting their financial future.</p>
+            </div>
+            <div class="card-action stories__card--action">
+              <a href="/stories/how-we-helped-a-300-unit-condo-pass-their-bylaw">Read the Case Study</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="stories__card card">
+            <div class="stories__card--content card-content">
+              <span class="card-title">Reaching Quorum</span>
+              <span class="stories__card--date">November 5, 2015</span>
+              <p>We helped this condo reach quorum days before their AGM was even held.</p>
+            </div>
+            <div class="card-action stories__card--action">
+              <a href="/stories/electronic-condo-proxies">Read the Case Study</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
