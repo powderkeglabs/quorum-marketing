@@ -23,31 +23,10 @@ main > section:nth-child(odd) {
   justify-content: center;
   align-items: center;
   align-content: center;
-  justify-content: center;
+  align-self: center;
 }
 
-.flex-item {
-  flex: 0 1 auto;
-}
-
-// Flex item type where it's all a column
-// - top align each benefit in the row
-.flex.badge-flex {
-  flex-flow: column nowrap;
-  align-items: center;
-  align-self: flex-start;
-  justify-content: center;
-}
-
-@media(min-width: 650px) {
-
-  .flex {
-    flex-flow: row nowrap;
-  }
-
-}
-
-.btn:hover, btn-large:hover {
+.btn:hover, .btn-large:hover {
   color: $button-color-raised;
   background-color: lighten($button-color, 5%);
 }
@@ -69,34 +48,9 @@ main > section:nth-child(odd) {
 //   border: 1px solid $accent-color;
 // }
 
-.flex-text {
-  order: 1;
-}
-
-.flex-img {
-  order: 2;
-}
-
 @media (min-width: 650px){
-  .flex-row-right {
-    flex: 0 1 50%;
-    order: 2;
-  }
-  .flex-row-left {
-    flex: 0 1 50%;
-    order: 1
-  }
-
-  .flex-text.flex-row-left {
-    padding-right: 5rem;
-  }
-
-  .flex-img.flex-row-right {
-    text-align: right;
-  }
-
-  .flex-img.flex-row-right {
-    text-align: left;
+  .flex {
+    flex-flow: row wrap;
   }
 
   .uvp-col {
@@ -108,5 +62,5 @@ main > section:nth-child(odd) {
 
   .index-header__row {
     padding-top: 50px;
-  }  
+  }
 }

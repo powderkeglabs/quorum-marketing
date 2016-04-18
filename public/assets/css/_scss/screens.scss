@@ -1,16 +1,13 @@
 .screens {
 
-  .row.flex {
-    justify-content: space-between;
-  }
-
   .screens-img {
     padding: 5px;
+    max-height: 400px;
   }
 
   .gif-img {
     border: 10px solid color('grey', 'lighten-2');
-    max-width: 350px;
+    max-height: 400px;
   }
 
   .fa.notice-icon {
