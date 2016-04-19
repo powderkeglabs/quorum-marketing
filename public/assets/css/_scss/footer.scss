@@ -23,9 +23,10 @@ footer .brand-logo .fa-inverse {
   color: $primary-color;
 }
 
-footer .headline {
-  // padding-top: 20px;
-  // padding-bottom: 20px;
+
+footer .footer-links li > a {
+  @extend .grey-text;
+  @extend .text-lighten-2;
 }
 
 .pkl a {

@@ -3,19 +3,13 @@
     <a href="/" class="brand-logo"><%- partial('logo.ejs', {}) %></a>
     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
-      <li><a href="<%- demo_url%>">Demo</a></li>
-      <li><a href="stories.html">Stories</a></li>
-      <li><a href="/#faq">FAQ</a></li>
-      <li><a href="<%=contact_url %>">Contact</a></li>
+      <%- partial('_navItems') %>
     </ul>
     <ul class="side-nav" id="mobile-demo">
       <li class="side-nav__brand-logo flex flex-row">
         <a href="/"><i class="fa fa-4x fa-users"></i></a>
       </li>
-      <li><a href="<%- demo_url%>">Demo</a></li>
-      <li><a href="stories.html">Stories</a></li>
-      <li><a href="/#faq">FAQ</a></li>
-      <li><a href="<%=contact_url %>">Contact</a></li>
+      <%- partial('_navItems') %>
     </ul>
   </div>
 </nav>
