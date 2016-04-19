@@ -20,6 +20,10 @@
   color: $accent-color !important;
 }
 
+.stories__header-row {
+  padding-top: 70px;
+}
+
 @media (min-width: 650px) {
   .stories__card--content {
     min-height: 220px;

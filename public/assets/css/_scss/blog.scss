@@ -1,37 +1,59 @@
-section.article {
-  background-color: #fff !important;
-}
-
 /// *********************************************************************
 /// BLOG LIST VIEW
 /// *********************************************************************
-.blog-header {
-  background-image: url('/assets/images/toronto1.jpg');
+.blog__header {
   background-position: center;
   background-size: cover;
+  min-height: 0px;
 }
 
-.blog-header .snippet,
-.blog-header .snippet_author {
+.blog__header--fill-overlay {
+  min-height: 300px;
+}
+
+.blog__header--row {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.blog__header--quote {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.blog__header--quote-text {
   font-size: 1.25rem;
+  display: block;
+  font-style: italic;
+
   @media(min-width: 650px){
     font-size: 1.5rem;
   }
 }
 
+.blog__header--quote-author {
+  padding-top: 10px;
+  display: block;
+  font-size: 1.15rem;
+}
+
 /// *********************************************************************
 /// ARTICLE VIEW
 /// *********************************************************************
-header.article {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .article {
+  background-color: #fff !important;
   img {
     @extend .responsive-img;
   }
+}
+
+.article__info-row {
+  opacity: 0.87;
+}
+
+.article__info-row .flex {
+  justify-content: flex-start;
+  flex-direction: row;
 }
 
 /// *******************************************************************
@@ -41,47 +63,20 @@ header.article {
 article {
   p {
     margin-top: 20px;
-    color: $text-primary-color;
-    opacity: 1;
-    font-size: 1.15rem;
   }
 
   h1, h2, h3, h4, h5 {
     margin-top: 30px;
-    font-weight: 500;
   }
 
-  h3 {
-    font-size: 30px;
-  }
-
-  h4 {
-    // font-size: 24px;
-    // font-size
-  }
-
-  h5 {
-    // font-size: 20px;
-    color: lighten($text-primary-color, 30%);
-    // font-weight: 400;
-  }
-  //
   li {
     margin-top: 15px;
   }
-  //
+
   // Image and caption
   img + em {
     font-size: 13px;
     color: color('grey', 'darken-1');
-  }
-
-  .flex {
-    align-items: center;
-    align-self: center;
-    justify-content: center;
-    align-content: center;
-    flex-flow: column nowrap;
   }
 
   hr {

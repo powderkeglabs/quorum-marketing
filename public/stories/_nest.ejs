@@ -1,0 +1,63 @@
+<header class="blog__header" style="background-image: url(<%= image %>)">
+  <div class="header-fill-overlay blog__header--fill-overlay">
+    <div class="container">
+      <div class="row blog__header--row">
+        <div class="col s12">
+          <div class="blog__header--quote left-align">
+            <span class="blog__header--quote-text">
+              <i class="fa fa-quote-left"></i> <%= quotes[0].text %> <i class="fa fa-quote-right"></i>
+            </span>
+            <span class="blog__header--quote-author">-- <%= quotes[0].author %></span>
+          </div>
+
+          <div class="blog__header--quote left-align">
+            <span class="blog__header--quote-text">
+              <i class="fa fa-quote-left"></i> <%= quotes[1].text %> <i class="fa fa-quote-right"></i>
+            </span>
+            <span class="blog__header--quote-author">-- <%= quotes[1].author %></span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="article">
+    <div class="container">
+      <!-- Article title -->
+      <div class="row article__title-row">
+        <div class="col s12">
+          <h3 class="article__title"><%= title %></h3>
+        </div>
+      </div>
+      <!-- Article Info Row -->
+      <div class="row article__info-row">
+        <div class="col s12">
+          <span class="date flex">
+            <i class="material-icons">today</i>&nbsp;&nbsp;
+            <time class="date-text"><%= date %></time>
+          </span>
+          <span class="tags flex">
+            <i class="material-icons">label</i>&nbsp;&nbsp;
+            <span class="tags-text"><%= tags %></span>
+          </span>
+          <span class="author flex">
+            <i class="material-icons">person</i>&nbsp;&nbsp;
+            <span class="author-text">by <%= author %></span>
+          </span>
+        </div>
+      </div>
+      <!-- Article Body -->
+      <div class="row">
+        <div class="col s12">
+          <article>
+            <%- yield %>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>

@@ -1,10 +1,4 @@
-## Case Study: Electronic Proxies at a Client Condo
-
-### Summary
-
 Our Client is a 200-unit downtown Toronto residential condo corporation that has traditionally had issues reaching quorum at their AGMs. Using the [Quorum platform](http://getquorum.com), they were able to significantly increase the number of proxies submitted year-over-year and successfully reached quorum days in advance of their AGM.
-
-A live demo of an online proxy form can be found at [demo.getquorum.com](https://demo.getquorum.com).
 
 ---
 
@@ -107,35 +101,7 @@ Contrast this to the 2014 numbers, attendance numbers would not have been known 
 
 While the overall numbers in 2015 may not look that impressive, it’s important to note that we launched the online proxy tool only 7 days before the AGM. Indeed, this was quite a last minute endeavor. I’m confident our numbers would be higher had we launched the tool earlier.
 
-
-<section class="testimonials">
-  <div class="fill-overlay">
-    <div class="container">
-      <div class="row">
-        <div class="testimonial">
-          <p class="person-quote">
-            "In my six years as a condo manager, this is the first time I’ve ever seen an AGM reach quorum before it was even held."
-            <br><span class="person-name">-- Wilmer Gomez, RCM, Brookfield</span></p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="testimonial">
-          <p class="person-quote">
-            "It made reaching quorum so easy. We intend to continue using the electronic proxy for future meetings."
-          <br><span class="person-name">-- Ed Bezeau, President, MTCC 1371</span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 ---
 
-##### Is This Legal?
-Yes, please see our [FAQ](http://getquorum.com/#faq) or [contact us](http://getquorum.com/#contact) for more information.
-
-##### Want to see a demo?
-Check out https://demo.getquorum.com.
-
-##### Want to use electronic proxies?
-Easy, [contact us](/#contact) and we'll get you set up.
+##### Want to use GetQuorum for your AGM?
+Easy, contact us and we'll get you set up.
