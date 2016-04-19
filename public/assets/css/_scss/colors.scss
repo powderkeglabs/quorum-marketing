@@ -5,7 +5,7 @@ $accent-color: color('red', 'accent-2');
 // $accent-color-secondary: color('blue-grey','base');
 $accent-color-secondary: $primary-color-dark;
 
-$secondary-color: color("red", "base") !default;
+$secondary-color: color("red", "base") !important;
 $success-color: color("green", "base") !default;
 $error-color: color("red", "base") !default;
 $link-color: color("light-blue", "darken-1") !default;
@@ -55,11 +55,14 @@ a {
 .fill-overlay{
   height: 100%;
   width: 100%;
-  background: rgba(2, 136, 209, 0.75)
+  background: rgba(2, 136, 209, 0.75);
 }
 
 .header-fill-overlay{
   @extend .fill-overlay;
   min-height: 450px;
-
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  /* Fix for IE*/
+  border: 1px solid transparent;
 }

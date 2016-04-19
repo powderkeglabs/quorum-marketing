@@ -1,47 +1,81 @@
-.contact {
-
+.contact__section {
+  #message,
   input[type=email],
   input[type=text] {
     background-color: #fff;
-    padding-left: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+  }
+
+  #message:focus,
+  input[type=email]:focus,
+  input[type=text]:focus {
+    border-bottom: 1px solid $primary-color;
+    box-shadow: 0 1px 0 0 $primary-color;;
+  }
+
+  label.active {
+    color: $primary-color !important;
   }
 
   label {
-    padding-bottom: 8px;
-    color: color('grey','darken-1');
+    margin-top: -10px;
   }
+}
+  //
+  // label {
+  //   padding-bottom: 8px;
+  //   color: color('grey','darken-1');
+  // }
+  //
+  // .has-error,
+  // .has-error label {
+  //   color: $error-color;
+  // }
+  //
+  // .error-text {
+  //   top: -10px;
+  //   position: relative;
+  //   font-size: 12px;
+  // }
+  //
+  // .msg-block {
+  //   padding-top: 20px;
+  //   padding-bottom: 20px;
+  // }
+  //
+  // .error-block {
+  //   color: $error-color;
+  //   background-color: lighten($error-color, 30%);
+  //   border: 1px solid lighten($error-color, 20%);
+  // }
+  //
+  // .success-block {
+  //   color: $success-color;
+  //   background-color: lighten($success-color, 30%);
+  //   border: 1px solid lighten($success-color, 20%);
+  // }
+  //
+  // .spinner-block {
+  //   display: flex;
+  //   flex-flow: row nowrap;
+  //   align-items: center;
+  // }
 
-  .has-error,
-  .has-error label {
-    color: $error-color;
-  }
 
-  .error-text {
-    top: -10px;
-    position: relative;
-    font-size: 12px;
-  }
+.contact__header {
+  background-image: url('/assets/images/toronto1.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 0px;
+}
 
-  .msg-block {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
+.contact__header .header-fill-overlay{
+  min-height: 0px;
+}
 
-  .error-block {
-    color: $error-color;
-    background-color: lighten($error-color, 30%);
-    border: 1px solid lighten($error-color, 20%);
-  }
-
-  .success-block {
-    color: $success-color;
-    background-color: lighten($success-color, 30%);
-    border: 1px solid lighten($success-color, 20%);
-  }
-
-  .spinner-block {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-  }
+.contact__header-row {
+  padding-top: 70px;
+  padding-bottom: 70px;
 }

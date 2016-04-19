@@ -2,13 +2,17 @@
   <div class="container">
     <div class="row">
       <div class="col l8 s12">
-        <h5>
-        <a href="/" class="brand-logo">
-          <%- partial('logo.ejs', {}) %>
-        </a>
-        </h5>
-        <p class="grey-text text-lighten-4 headline">
-          <%- headline %>
+        <h5><a href="/" class="brand-logo"><%- partial('logo.ejs', {}) %></a></h5>
+        <p class="grey-text text-lighten-4 headline"><%- headline %></p>
+        <div class="grey-text text-lighten-4 footer__email">
+          <span><i class="fa fa-envelope"></i></span>
+          <a class="grey-text text-lighten-4" href="mailto:contact@getquorum.com">
+            contact@getquorum.com
+          </a>
+        </div>
+        <div class="grey-text text-lighten-4 footer__phone">
+          <span><i class="fa fa-phone"></i></span> 1 (416) 939-2088
+        </div>
         </p>
         <br><br>
       </div>
@@ -24,7 +28,7 @@
     <div class="container">
       <div class="row">
         <div class="col s6 left-align pkl">
-          <span class="grey-text text-lighten-3">&copy; 2016 <%= site_name%> by <a href="https://powderkeglabs.com"><%= author %></a></span>
+          <span class="grey-text text-lighten-3">&copy; 2016 <a href="https://powderkeglabs.com">PowderKeg Labs, Inc.</a></span>
         </div>
         <div class="col s6 right-align pkl">
           <span class="grey-text text-lighten-3"><a href="/terms-of-use.html">Terms</a></span>
