@@ -64,7 +64,7 @@ Ease and convenience matters not unless owners care enough to take action. We gi
 
 <div class="flex">
 ![Our educational email reminders](/assets/images/proxies/quorum-email.jpg)
-*Our educational email reminders*
+<p class="image-caption">*Our educational email reminders*</p>
 </div>
 
 Holding a meeing is expensive. But having to hold the same meeting multiple times? Now that's just plain wasteful.

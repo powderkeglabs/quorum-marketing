@@ -74,9 +74,12 @@ article {
   }
 
   // Image and caption
-  img + em {
+  .image-caption {
+    padding-top: 0px;
+    margin-top: 0px;
     font-size: 13px;
     color: color('grey', 'darken-1');
+    text-align: center;
   }
 
   hr {
@@ -85,5 +88,6 @@ article {
     width: 50%;
     opacity: .75;
   }
+
 
 }
