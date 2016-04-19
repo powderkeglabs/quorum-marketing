@@ -1,27 +1,37 @@
-/// *********************************************************************
-/// BLOG LIST VIEW
-/// *********************************************************************
 .stories-header {
   background-image: url('/assets/images/toronto1.jpg');
   background-position: center;
   background-size: cover;
-  min-height: 300px;
+  min-height: 0px;
 }
 
 .stories-header .header-fill-overlay{
-  min-height: 300px;
-}
-
-.stories__card--date {
-  display: block;
-  padding-bottom: 10px;
-}
-.stories__card--action a{
-  color: $accent-color !important;
+  min-height: 0px;
 }
 
 .stories__header-row {
   padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.stories__card-trim {
+  width: 100%;
+  border-top: 3px solid $primary-color;
+}
+
+.stories__card--title {
+  line-height: normal !important;
+  font-weight: 400 !important;
+
+}
+
+.stories__card--date {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.stories__card--action a{
+  color: $accent-color !important;
 }
 
 @media (min-width: 650px) {

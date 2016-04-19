@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row stories__header-row">
         <div class="col s12 center-align">
-          <h2>Case Studies</h2>
+          <h2>Stories and Case Studies</h2>
         </div>
       </div>
     </div>
@@ -14,31 +14,20 @@
   <section class="stories">
     <div class="container">
       <div class="row">
-        <div class="col s12 m6">
-          <div class="stories__card card">
-            <div class="stories__card--content card-content">
-              <span class="card-title">Passing a Bylaw</span>
-              <span class="stories__card--date">April 16, 2016</span>
-              <p>Read about how we helped a 300-unit condo pass a critical bylaw affecting their financial future.</p>
-            </div>
-            <div class="card-action stories__card--action">
-              <a href="/stories/how-we-helped-a-300-unit-condo-pass-their-bylaw">Read the Case Study</a>
-            </div>
-          </div>
-        </div>
 
-        <div class="col s12 m6">
-          <div class="stories__card card">
-            <div class="stories__card--content card-content">
-              <span class="card-title">Reaching Quorum</span>
-              <span class="stories__card--date">November 5, 2015</span>
-              <p>We helped this condo reach quorum days before their AGM was even held.</p>
-            </div>
-            <div class="card-action stories__card--action">
-              <a href="/stories/electronic-condo-proxies">Read the Case Study</a>
-            </div>
-          </div>
-        </div>
+        <%- partial('_storiesCard', {
+          title: "Passing a Bylaw With The GetQuorum Platform",
+          date: "April 16, 2016",
+          url: "/stories/passing-a-bylaw-with-getquorum",
+          text: "Read about how we helped a 300-unit condo pass a critical bylaw affecting their financial future."
+        }); %>
+
+        <%- partial('_storiesCard', {
+          title: "Reaching Quorum With Electronic Proxies",
+          date: "December 2, 2015",
+          url: "/stories/electronic-condo-proxies",
+          text: "We helped this condo reach quorum days before their AGM was even held."
+        }); %>
 
       </div>
     </div>

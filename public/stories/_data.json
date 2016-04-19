@@ -1,4 +1,11 @@
 {
+  "index": {
+    "title": "Stories & Case Studies",
+    "image": "/assets/images/toronto1.jpg",
+    "author": "JJ Hiew",
+    "description": "Stories and case studies of the GetQuorum Platform in action.",
+    "path": "/stories"
+  },
   "electronic-condo-proxies": {
     "title": "Reaching Quorum With Electronic Proxies",
     "quotes": [
@@ -16,6 +23,26 @@
     "author": "JJ Hiew",
     "tags": "Case Study",
     "description": "A case study showing how we helped a 200 unit condo, one with recurring quorum issues, double the proxy submissions year-to-year and reach requorum days before their latest AGM.",
-    "path": "/blog/electronic-condo-proxies"
+    "path": "/stories/electronic-condo-proxies"
+  },
+  "passing-a-bylaw-with-getquorum": {
+    "title": "Passing a Bylaw With The GetQuorum Platform",
+    "quotes": [
+      {
+        "text": "In my six years as a condo manager, this is the first time I’ve ever seen an AGM reach quorum before it was even held.",
+        "author": "Wilmer Gomez, RCM"
+      },
+      {
+        "text": "It made reaching quorum so easy. We intend to continue using the electronic proxy for future meetings.",
+        "author": "Ed Bezeau, President, MTCC 1371"
+      }
+    ],
+    "date": "April 16, 2016",
+    "image": "/assets/images/toronto1.jpg",
+    "author": "JJ Hiew",
+    "tags": "Case Study",
+    "description": "A case study about how we helped a 300-unit condo pass a critical bylaw with the GetQuorum platform.",
+    "path": "/stories/passing-a-bylaw-with-getquorum"
   }
+
 }

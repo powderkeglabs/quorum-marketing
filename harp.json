@@ -1,15 +1,15 @@
 {
   "globals": {
-    "title": "GetQuorum: Electronic Proxy and Voting for Condo Owner Meetings",
-    "description": "Reaching Quorum and Passing Bylaws Just Got Easier. We provide electronic proxy and online voting solutions for condominium owner meetings.",
+    "title": "GetQuorum: Electronic Proxies for Condo Meetings",
+    "description": "Increase owner representation at meetings with our electronic proxy, online voting, and owner solicitation platform.",
     "site_name": "GetQuorum",
     "uvp": "Reaching Quorum and Passing Bylaws Just Got Easier",
-    "headline": "Increase owner representation at meetings with our electronic proxy and solicitation solutions.",
-    "path": "",
-    "image": "",
+    "headline": "Increase owner representation at meetings with our electronic proxy, online voting, and owner solicitation platform.",
+    "path": "/",
+    "image": "/assets/images/toronto1.jpg",
     "author": "PKL",
     "demo_url": "http://demo.getquorum.com",
-    "case_study_url": "/stories.html",
+    "featuredPost": "/stories/passing-a-bylaw-with-getquorum",
     "contact_url": "/#contact"
   }
 }
