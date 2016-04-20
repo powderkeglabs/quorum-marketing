@@ -2,3 +2,4 @@
 public/assets/components
 node_modules
 npm-debug.log
+.env
