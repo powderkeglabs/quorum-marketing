@@ -6,8 +6,9 @@
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 4px;
+    width: 95%;
   }
-
+  
   #message:focus,
   input[type=email]:focus,
   input[type=text]:focus {
@@ -22,47 +23,20 @@
   label {
     margin-top: -10px;
   }
-}
-  //
-  // label {
-  //   padding-bottom: 8px;
-  //   color: color('grey','darken-1');
-  // }
-  //
-  // .has-error,
-  // .has-error label {
-  //   color: $error-color;
-  // }
-  //
-  // .error-text {
-  //   top: -10px;
-  //   position: relative;
-  //   font-size: 12px;
-  // }
-  //
-  // .msg-block {
-  //   padding-top: 20px;
-  //   padding-bottom: 20px;
-  // }
-  //
-  // .error-block {
-  //   color: $error-color;
-  //   background-color: lighten($error-color, 30%);
-  //   border: 1px solid lighten($error-color, 20%);
-  // }
-  //
-  // .success-block {
-  //   color: $success-color;
-  //   background-color: lighten($success-color, 30%);
-  //   border: 1px solid lighten($success-color, 20%);
-  // }
-  //
-  // .spinner-block {
-  //   display: flex;
-  //   flex-flow: row nowrap;
-  //   align-items: center;
-  // }
 
+  .error {
+    top: -10px;
+    position: relative;
+    font-size: 14px;
+    color: $error-color;
+    display: none;
+  }
+
+  .error.has-error {
+    display: block
+  }
+
+}
 
 .contact__header {
   background-image: url('/assets/images/toronto1.jpg');
@@ -78,4 +52,13 @@
 .contact__header-row {
   padding-top: 70px;
   padding-bottom: 70px;
+}
+
+.contact__form--buttons {
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+
+.contact__form--spinner {
+  padding: 10px;
 }

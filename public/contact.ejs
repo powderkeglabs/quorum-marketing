@@ -17,31 +17,41 @@
         <!-- Form Block -->
         <div class="col s12 m6">
           <div class="row">
-            <form class="col s12">
+            <form class="col s12 contact__form">
               <h3>Send us a message</h3>
               <p>Got a comment or question for the GetQuorum team? Let us know.</p>
               <br>
               <div class="row">
-                <div class="input-field col s12">
+                <div class="input-field col s12 name__input-field">
                   <input id="name" type="text" class="validate" placeholder="Ralph Wiggum">
                   <label for="name">Your Name</label>
+                  <span class='error'>Please enter your name</span>
                 </div>
               </div>
               <div class="row">
-                <div class="input-field col s12">
+                <div class="input-field col s12 email__input-field">
                   <input id="email" type="email" class="validate" placeholder="rwiggum@example.com">
                   <label for="email">Your Email Address</label>
+                  <span class='error'>Please enter a valid email</span>
                 </div>
               </div>
               <div class="row">
-                <div class="input-field col s12">
+                <div class="input-field col s12 message__input-field">
                   <textarea id="message" class="materialize-textarea" length="2000" maxlength="2000" placeholder="Start typing here..."></textarea>
                   <label for="message">Your Message</label>
+                  <span class='error'>Please enter a message</span>
                 </div>
               </div>
               <div class="row">
+                <div class="col s12 flex contact__form--buttons">
+                  <button class="btn btn-large waves-effect waves-light accent-color contact__form--button" id="send-message">Send Message</button>
+                  <span class="contact__form--spinner hide"><%- partial('_shared_partials/spinner') %></span>
+                  <span class="contact__form--spinner-text hide">Sending...</span>
+                </div>
+              </div>
+              <div class="row contact__form--message-row">
                 <div class="col s12">
-                  <button class="btn btn-large waves-effect waves-light accent-color">Send Message</button>
+                  <span class="response-message"></span>
                 </div>
               </div>
             </form>
@@ -70,8 +80,5 @@
 
 </main>
 
-<script>
-// (function() {
-//   $('input#message').characterCounter();
-// })();
-</script>
+<script src="/assets/components/validator-js/validator.min.js"></script>
+<script src="/assets/js/contact.js"></script>

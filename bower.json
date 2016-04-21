@@ -16,5 +16,6 @@
   ],
   "dependencies": {
     "Materialize": "materialize#~0.97.1",
+    "validator-js": "~5.2.0"
   }
 }
