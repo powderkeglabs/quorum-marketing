@@ -35,7 +35,7 @@ main > section:nth-child(odd) {
 }
 
 .btn-secondary {
-  background-color: #fff;
+  background-color: transparent;
   border: 1px solid $accent-color-secondary;
   color: $accent-color-secondary;
   text-transform: capitalize;
@@ -51,7 +51,7 @@ main > section:nth-child(odd) {
 //   border: 1px solid $accent-color;
 // }
 
-@media (min-width: 650px){
+@media #{$medium-and-up} {
   .flex {
     flex-flow: row wrap;
   }
