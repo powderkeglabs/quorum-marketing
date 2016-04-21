@@ -6,7 +6,7 @@
   padding-top: 40px;
 }
 
-@media (min-width: 600px) {
+@media #{$medium-and-up} {
   .col.benefit {
     padding-top: 0px;
   }

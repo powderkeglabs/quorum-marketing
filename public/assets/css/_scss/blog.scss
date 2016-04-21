@@ -26,7 +26,7 @@
   display: block;
   font-style: italic;
 
-  @media(min-width: 650px){
+  @media #{$medium-and-up} {
     font-size: 1.5rem;
   }
 }

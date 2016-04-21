@@ -46,11 +46,6 @@ main > section:nth-child(odd) {
   background-color: $accent-color-secondary;
 }
 
-// .btn-contact {
-//   background-color: transparent;
-//   border: 1px solid $accent-color;
-// }
-
 @media #{$medium-and-up} {
   .flex {
     flex-flow: row wrap;

@@ -1,6 +1,6 @@
 html {
   font-size: 15px;
-  @media (min-width: 500px){
+  @media #{$medium-and-up} {
     font-size: 14px;
   }
 }
@@ -18,7 +18,7 @@ html {
 p {
   font-size: 1.20rem;
   opacity: 0.92;
-  @media (min-width: 500px) {
+  @media #{$medium-and-up} {
     font-size: 1.15rem;
   }
 }

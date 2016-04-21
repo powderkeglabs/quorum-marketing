@@ -38,7 +38,7 @@
   color: $accent-color !important;
 }
 
-@media (min-width: 650px) {
+@media #{$medium-and-up} {
   .stories__card--content {
     min-height: 220px;
   }

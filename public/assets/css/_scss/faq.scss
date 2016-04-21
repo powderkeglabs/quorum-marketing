@@ -1,5 +1,5 @@
 // On larger screen sizes, switch to 2 column view
-@media(min-width: 650px) {
+@media #{$medium-and-up} {
   .faq .flex.row {
     flex-flow: row wrap;
     align-content: center;
@@ -26,13 +26,9 @@
 }
 
 .faq .question {
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   font-weight: 600;
   color: lighten($text-primary-color, 20%);
-
-  @media(min-width: 500px){
-    font-size: 1.25rem;
-  }
 }
 
 .faq .answer {
