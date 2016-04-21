@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <meta name="google-site-verification" content="n-AbeiAYgU08sC5C9fnMLSbP3TONuQ6Nde8I5b9epNw" />
+    <meta name="description" content="Increase owner representation at meetings with our electronic proxy, online voting, and owner engagement platform.">
+    <meta name="author" content="PKL">
+
+    <meta property="og:title" content="GetQuorum: Electronic Proxies for Condo Meetings" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/" />
+    <meta property="og:image" content="/assets/images/toronto1.jpg" />
+    <meta property="og:description" content="Increase owner representation at meetings with our electronic proxy, online voting, and owner engagement platform." />
+    <meta property="og:site_name" content="GetQuorum" />
+
+    <title>GetQuorum: Electronic Proxies for Condo Meetings</title>
+    <link rel="canonical" href="" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <nav role="naviation">
+  <div class="nav-wrapper">
+    <a href="/" class="brand-logo"><span class="full">GetQuorum</span>
+</a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="http://demo.getquorum.com">Try the Demo</a></li>
+<li><a href="/stories">Stories</a></li>
+<li><a href="/#faq">FAQ</a></li>
+<li><a href="/contact">Contact</a></li>
+
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li class="side-nav__brand-logo flex flex-row">
+        <a href="/"><i class="fa fa-4x fa-users"></i></a>
+      </li>
+      <li><a href="/">Home</a></li>
+      <li><a href="http://demo.getquorum.com">Try the Demo</a></li>
+<li><a href="/stories">Stories</a></li>
+<li><a href="/#faq">FAQ</a></li>
+<li><a href="/contact">Contact</a></li>
+
+    </ul>
+  </div>
+</nav>
+
+
+    
+      <h1>validator.js</h1><p><a href="https://npmjs.org/package/validator"><img src="http://img.shields.io/npm/v/validator.svg" alt="NPM version"></a> <a href="https://travis-ci.org/chriso/validator.js"><img src="http://img.shields.io/travis/chriso/validator.js.svg" alt="Build Status"></a> <a href="https://coveralls.io/r/chriso/validator.js"><img src="http://img.shields.io/coveralls/chriso/validator.js/master.svg" alt="Coveralls Status"></a> <a href="https://npmjs.org/package/validator"><img src="http://img.shields.io/npm/dm/validator.svg" alt="Downloads"></a></p>
+<p>A library of string validators and sanitizers.</p>
+<h3>Server-side usage</h3><p>Install the library with <code>npm install validator</code></p>
+<pre><code class="language-javascript">var validator = require(&#39;validator&#39;);
+
+validator.isEmail(&#39;foo@bar.com&#39;); //=&gt; true
+</code></pre>
+<h4>ES6</h4><pre><code class="language-javascript">import validator from &#39;validator&#39;;
+</code></pre>
+<p>Or, import only a subset of the library:</p>
+<pre><code class="language-javascript">import isEmail from &#39;validator/lib/isEmail&#39;;
+</code></pre>
+<h3>Client-side usage</h3><p>The library can be loaded either as a standalone script, or through an <a href="http://requirejs.org/docs/whyamd.html">AMD</a>-compatible loader</p>
+<pre><code class="language-html">&lt;script type=&quot;text/javascript&quot; src=&quot;validator.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  validator.isEmail(&#39;foo@bar.com&#39;); //=&gt; true
+&lt;/script&gt;
+</code></pre>
+<p>The library can also be installed through <a href="http://bower.io/">bower</a></p>
+<pre><code class="language-bash">$ bower install validator-js
+</code></pre>
+<h3>Strings only</h3><p><strong>This library validates and sanitizes strings only.</strong></p>
+<p>If you&#39;re not sure if your input is a string, coerce it using <code>input + &#39;&#39;</code>.
+Passing anything other than a string is an error.</p>
+<h3>Validators</h3><ul>
+<li><strong>contains(str, seed)</strong> - check if the string contains the seed.</li>
+<li><strong>equals(str, comparison)</strong> - check if the string matches the comparison.</li>
+<li><strong>isAfter(str [, date])</strong> - check if the string is a date that&#39;s after the specified date (defaults to now).</li>
+<li><strong>isAlpha(str [, locale])</strong> - check if the string contains only letters (a-zA-Z). Locale is one of <code>[&#39;ar&#39;, &#39;ar-AE&#39;, &#39;ar-BH&#39;, &#39;ar-DZ&#39;, &#39;ar-EG&#39;, &#39;ar-IQ&#39;, &#39;ar-JO&#39;, &#39;ar-KW&#39;, &#39;ar-LB&#39;, &#39;ar-LY&#39;, &#39;ar-MA&#39;, &#39;ar-QA&#39;, &#39;ar-QM&#39;, &#39;ar-SA&#39;, &#39;ar-SD&#39;, &#39;ar-SY&#39;, &#39;ar-TN&#39;, &#39;ar-YE&#39;, &#39;cs-CZ&#39;, &#39;de-DE&#39;, &#39;en-AU&#39;, &#39;en-GB&#39;, &#39;en-HK&#39;, &#39;en-IN&#39;, &#39;en-NZ&#39;, &#39;en-US&#39;, &#39;en-ZA&#39;, &#39;en-ZM&#39;, &#39;es-ES&#39;, &#39;fr-FR&#39;, &#39;nl-NL&#39;, &#39;pl-PL&#39;, &#39;pt-PT&#39;, &#39;ru-RU&#39;, &#39;tr-TR&#39;]</code>) and defaults to <code>en-US</code>.</li>
+<li><strong>isAlphanumeric(str [, locale])</strong> - check if the string contains only letters and numbers. Locale is one of <code>[&#39;ar&#39;, &#39;ar-AE&#39;, &#39;ar-BH&#39;, &#39;ar-DZ&#39;, &#39;ar-EG&#39;, &#39;ar-IQ&#39;, &#39;ar-JO&#39;, &#39;ar-KW&#39;, &#39;ar-LB&#39;, &#39;ar-LY&#39;, &#39;ar-MA&#39;, &#39;ar-QA&#39;, &#39;ar-QM&#39;, &#39;ar-SA&#39;, &#39;ar-SD&#39;, &#39;ar-SY&#39;, &#39;ar-TN&#39;, &#39;ar-YE&#39;, &#39;cs-CZ&#39;, &#39;de-DE&#39;, &#39;en-AU&#39;, &#39;en-GB&#39;, &#39;en-HK&#39;, &#39;en-IN&#39;, &#39;en-NZ&#39;, &#39;en-US&#39;, &#39;en-ZA&#39;, &#39;en-ZM&#39;, &#39;es-ES&#39;, &#39;fr-FR&#39;, &#39;nl-NL&#39;, &#39;pl-PL&#39;, &#39;pt-PT&#39;, &#39;ru-RU&#39;, &#39;tr-TR&#39;]</code>) and defaults to <code>en-US</code>.</li>
+<li><strong>isAscii(str)</strong> - check if the string contains ASCII chars only.</li>
+<li><strong>isBase64(str)</strong> - check if a string is base64 encoded.</li>
+<li><strong>isBefore(str [, date])</strong> - check if the string is a date that&#39;s before the specified date.</li>
+<li><strong>isBoolean(str)</strong> - check if a string is a boolean.</li>
+<li><strong>isByteLength(str, options)</strong> - check if the string&#39;s length (in bytes) falls in a range.<code>options</code> is an object which defaults to <code>{min:0, max: undefined}</code>.</li>
+<li><strong>isCreditCard(str)</strong> - check if the string is a credit card.</li>
+<li><strong>isCurrency(str, options)</strong> - check if the string is a valid currency amount. <code>options</code> is an object which defaults to <code>{symbol: &#39;$&#39;, require_symbol: false, allow_space_after_symbol: false, symbol_after_digits: false, allow_negatives: true, parens_for_negatives: false, negative_sign_before_digits: false, negative_sign_after_digits: false, allow_negative_sign_placeholder: false, thousands_separator: &#39;,&#39;, decimal_separator: &#39;.&#39;, allow_space_after_digits: false }</code>.</li>
+<li><strong>isDataURI(str)</strong> - check if the string is a <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/data_URIs">data uri format</a>.</li>
+<li><strong>isDate(str)</strong> - check if the string is a date.</li>
+<li><strong>isDecimal(str)</strong> - check if the string represents a decimal number, such as 0.1, .3, 1.1, 1.00003, 4.0, etc.</li>
+<li><strong>isDivisibleBy(str, number)</strong> - check if the string is a number that&#39;s divisible by another.</li>
+<li><strong>isEmail(str [, options])</strong> - check if the string is an email. <code>options</code> is an object which defaults to <code>{ allow_display_name: false, allow_utf8_local_part: true, require_tld: true }</code>. If <code>allow_display_name</code> is set to true, the validator will also match <code>Display Name &lt;email-address&gt;</code>. If <code>allow_utf8_local_part</code> is set to false, the validator will not allow any non-English UTF8 character in email address&#39; local part. If <code>require_tld</code> is set to false, e-mail addresses without having TLD in their domain will also be matched.</li>
+<li><strong>isFQDN(str [, options])</strong> - check if the string is a fully qualified domain name (e.g. domain.com). <code>options</code> is an object which defaults to <code>{ require_tld: true, allow_underscores: false, allow_trailing_dot: false }</code>.</li>
+<li><strong>isFloat(str [, options])</strong> - check if the string is a float. <code>options</code> is an object which can contain the keys <code>min</code> and/or <code>max</code> to validate the float is within boundaries (e.g. <code>{ min: 7.22, max: 9.55 }</code>).</li>
+<li><strong>isFullWidth(str)</strong> - check if the string contains any full-width chars.</li>
+<li><strong>isHalfWidth(str)</strong> - check if the string contains any half-width chars.</li>
+<li><strong>isHexColor(str)</strong> - check if the string is a hexadecimal color.</li>
+<li><strong>isHexadecimal(str)</strong> - check if the string is a hexadecimal number.</li>
+<li><strong>isIP(str [, version])</strong> - check if the string is an IP (version 4 or 6).</li>
+<li><strong>isISBN(str [, version])</strong> - check if the string is an ISBN (version 10 or 13).</li>
+<li><strong>isISIN(str)</strong> - check if the string is an <a href="https://en.wikipedia.org/wiki/International_Securities_Identification_Number">ISIN</a> (stock/security identifier).</li>
+<li><strong>isISO8601(str)</strong> - check if the string is a valid <a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> date.</li>
+<li><strong>isIn(str, values)</strong> - check if the string is in a array of allowed values.</li>
+<li><strong>isInt(str [, options])</strong> - check if the string is an integer. <code>options</code> is an object which can contain the keys <code>min</code> and/or <code>max</code> to check the integer is within boundaries (e.g. <code>{ min: 10, max: 99 }</code>).</li>
+<li><strong>isJSON(str)</strong> - check if the string is valid JSON (note: uses JSON.parse).</li>
+<li><strong>isLength(str, options)</strong> - check if the string&#39;s length falls in a range. <code>options</code> is an object which defaults to <code>{min:0, max: undefined}</code>. Note: this function takes into account surrogate pairs.</li>
+<li><strong>isLowercase(str)</strong> - check if the string is lowercase.</li>
+<li><strong>isMACAddress(str)</strong> - check if the string is a MAC address.</li>
+<li><strong>isMobilePhone(str, locale)</strong> - check if the string is a mobile phone number, (locale is one of <code>[&#39;ar-SY&#39;, &#39;cs-CZ&#39;, &#39;de-DE&#39;, &#39;el-GR&#39;, &#39;en-AU&#39;, &#39;en-GB&#39;, &#39;en-HK&#39;, &#39;en-IN&#39;, &#39;en-NZ&#39;, &#39;en-US&#39;, &#39;en-ZA&#39;, &#39;en-ZM&#39;, &#39;es-ES&#39;, &#39;fi-FI&#39;, &#39;fr-FR&#39;, &#39;ms-MY&#39;, &#39;nb-NO&#39;, &#39;nn-NO&#39;, &#39;pt-PT&#39;, &#39;ru-RU&#39;, &#39;tr-TR&#39;, &#39;vi-VN&#39;, &#39;zh-CN&#39;, &#39;zh-TW&#39;]</code>).</li>
+<li><strong>isMongoId(str)</strong> - check if the string is a valid hex-encoded representation of a <a href="http://docs.mongodb.org/manual/reference/object-id/">MongoDB ObjectId</a>.</li>
+<li><strong>isMultibyte(str)</strong> - check if the string contains one or more multibyte chars.</li>
+<li><strong>isNull(str)</strong> - check if the string is null (has a length of zero).</li>
+<li><strong>isNumeric(str)</strong> - check if the string contains only numbers.</li>
+<li><strong>isSurrogatePair(str)</strong> - check if the string contains any surrogate pairs chars.</li>
+<li><strong>isURL(str [, options])</strong> - check if the string is an URL. <code>options</code> is an object which defaults to <code>{ protocols: [&#39;http&#39;,&#39;https&#39;,&#39;ftp&#39;], require_tld: true, require_protocol: false, require_valid_protocol: true, allow_underscores: false, host_whitelist: false, host_blacklist: false, allow_trailing_dot: false, allow_protocol_relative_urls: false }</code>.</li>
+<li><strong>isUUID(str [, version])</strong> - check if the string is a UUID (version 3, 4 or 5).</li>
+<li><strong>isUppercase(str)</strong> - check if the string is uppercase.</li>
+<li><strong>isVariableWidth(str)</strong> - check if the string contains a mixture of full and half-width chars.</li>
+<li><strong>isWhitelisted(str, chars)</strong> - checks characters if they appear in the whitelist.</li>
+<li><strong>matches(str, pattern [, modifiers])</strong> - check if string matches the pattern. Either <code>matches(&#39;foo&#39;, /foo/i)</code> or <code>matches(&#39;foo&#39;, &#39;foo&#39;, &#39;i&#39;)</code>.</li>
+</ul>
+<h3>Sanitizers</h3><ul>
+<li><strong>blacklist(input, chars)</strong> - remove characters that appear in the blacklist. The characters are used in a RegExp and so you will need to escape some chars, e.g. <code>blacklist(input, &#39;\\[\\]&#39;)</code>.</li>
+<li><strong>escape(input)</strong> - replace <code>&lt;</code>, <code>&gt;</code>, <code>&amp;</code>, <code>&#39;</code>, <code>&quot;</code> and <code>/</code> with HTML entities.</li>
+<li><strong>unescape(input)</strong> - replaces HTML encoded entities with <code>&lt;</code>, <code>&gt;</code>, <code>&amp;</code>, <code>&#39;</code>, <code>&quot;</code> and <code>/</code>.</li>
+<li><strong>ltrim(input [, chars])</strong> - trim characters from the left-side of the input.</li>
+<li><strong>normalizeEmail(email [, options])</strong> - canonicalize an email address. <code>options</code> is an object which defaults to <code>{ lowercase: true, remove_dots: true, remove_extension: true }</code>. With <code>lowercase</code> set to <code>true</code>, the local part of the email address is lowercased for all domains; the hostname is always lowercased and the local part of the email address is always lowercased for hosts that are known to be case-insensitive (currently only GMail). Normalization follows special rules for known providers: currently, GMail addresses have dots removed in the local part and are stripped of extensions (e.g. <code>some.one+extension@gmail.com</code> becomes <code>someone@gmail.com</code>) and all <code>@googlemail.com</code> addresses are normalized to <code>@gmail.com</code>.</li>
+<li><strong>rtrim(input [, chars])</strong> - trim characters from the right-side of the input.</li>
+<li><strong>stripLow(input [, keep_new_lines])</strong> - remove characters with a numerical value &lt; 32 and 127, mostly control characters. If <code>keep_new_lines</code> is <code>true</code>, newline characters are preserved (<code>\n</code> and <code>\r</code>, hex <code>0xA</code> and <code>0xD</code>). Unicode-safe in JavaScript.</li>
+<li><strong>toBoolean(input [, strict])</strong> - convert the input string to a boolean. Everything except for <code>&#39;0&#39;</code>, <code>&#39;false&#39;</code> and <code>&#39;&#39;</code> returns <code>true</code>. In strict mode only <code>&#39;1&#39;</code> and <code>&#39;true&#39;</code> return <code>true</code>.</li>
+<li><strong>toDate(input)</strong> - convert the input string to a date, or <code>null</code> if the input is not a date.</li>
+<li><strong>toFloat(input)</strong> - convert the input string to a float, or <code>NaN</code> if the input is not a float.</li>
+<li><strong>toInt(input [, radix])</strong> - convert the input string to an integer, or <code>NaN</code> if the input is not an integer.</li>
+<li><strong>trim(input [, chars])</strong> - trim characters (whitespace by default) from both sides of the input.</li>
+<li><strong>whitelist(input, chars)</strong> - remove characters that do not appear in the whitelist. The characters are used in a RegExp and so you will need to escape some chars, e.g. <code>whitelist(input, &#39;\\[\\]&#39;)</code>.</li>
+</ul>
+<h3>XSS Sanitization</h3><p>XSS sanitization was removed from the library in <a href="https://github.com/chriso/validator.js/commit/2d5d6999541add350fb396ef02dc42ca3215049e">2d5d6999</a>.</p>
+<p>For an alternative, have a look at Yahoo&#39;s <a href="https://github.com/yahoo/xss-filters">xss-filters library</a> or at <a href="https://github.com/cure53/DOMPurify">DOMPurify</a>.</p>
+<h3>Tests</h3><pre><code class="language-sh">$ npm test
+</code></pre>
+<h3>License (MIT)</h3><pre><code>Copyright (c) 2016 Chris O&#39;Hara &lt;cohara87@gmail.com&gt;
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+&quot;Software&quot;), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+    
+
+    <footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l8 s12">
+        <h5><a href="/" class="brand-logo"><span class="full">GetQuorum</span>
+</a></h5>
+        <p class="grey-text text-lighten-4 headline">Simple, Condo Act compliant electronic proxies for condominium meetings.</p>
+        <div class="grey-text text-lighten-4 footer__email">
+          <span><i class="fa fa-envelope"></i></span>
+          <a class="grey-text text-lighten-4" href="mailto:contact@getquorum.com">
+            contact@getquorum.com
+          </a>
+        </div>
+        <div class="grey-text text-lighten-4 footer__phone">
+          <!-- <span><i class="fa fa-phone"></i></span> -->
+        </div>
+        </p>
+        <br><br>
+      </div>
+      <div class="col l4 s12 white-text footer-links">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a href="http://demo.getquorum.com">Try the Demo</a></li>
+<li><a href="/stories">Stories</a></li>
+<li><a href="/#faq">FAQ</a></li>
+<li><a href="/contact">Contact</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col s6 left-align pkl">
+          <span class="grey-text text-lighten-3">&copy; 2016 <a href="https://powderkeglabs.com">PowderKeg Labs, Inc.</a></span>
+        </div>
+        <div class="col s6 right-align pkl">
+          <span class="grey-text text-lighten-3"><a href="/terms-of-use.html">Terms</a></span>
+          &nbsp;|&nbsp;
+          <span class="grey-text text-lighten-3"><a href="/privacy.html">Privacy</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Script Imports -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      // ga('create', 'UA-73893063-1', 'auto');
+      // ga('send', 'pageview');
+    </script>
+  </body>
+</html>

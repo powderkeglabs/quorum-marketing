@@ -12,8 +12,7 @@
       $this.width('100%');
       var $active, $content, $links = $this.find('li.tab a'),
           $tabs_width = $this.width(),
-          $tab_width = $this.find('li').first().outerWidth(),
-          $tab_min_width = parseInt($this.find('li').first().css('minWidth')),
+          $tab_width = Math.max($tabs_width, $this[0].scrollWidth) / $links.length,
           $index = 0;
 
       // If the location.hash matches one of the links, use that as the active tab.
@@ -33,7 +32,9 @@
         $index = 0;
       }
 
-      $content = $($active[0].hash);
+      if ($active[0] !== undefined) {
+        $content = $($active[0].hash);
+      }
 
       // append indicator then set indicator width to tab width
       $this.append('<div class="indicator"></div>');
@@ -44,7 +45,7 @@
       }
       $(window).resize(function () {
         $tabs_width = $this.width();
-        $tab_width = $this.find('li').first().outerWidth();
+        $tab_width = Math.max($tabs_width, $this[0].scrollWidth) / $links.length;
         if ($index < 0) {
           $index = 0;
         }
@@ -68,11 +69,13 @@
         }
 
         $tabs_width = $this.width();
-        $tab_width = $this.find('li').first().outerWidth();
+        $tab_width = Math.max($tabs_width, $this[0].scrollWidth) / $links.length;
 
         // Make the old tab inactive.
         $active.removeClass('active');
-        $content.hide();
+        if ($content !== undefined) {
+          $content.hide();
+        }
 
         // Update the variables with the new link and content
         $active = $(this);
@@ -89,7 +92,9 @@
         // Change url to current tab
         // window.location.hash = $active.attr('href');
 
-        $content.show();
+        if ($content !== undefined) {
+          $content.show();
+        }
 
         // Update indicator
         if (($index - $prev_index) >= 0) {
@@ -105,24 +110,6 @@
         // Prevent the anchor's default click action
         e.preventDefault();
       });
-
-      // Add scroll for small screens
-      if ($tab_width <= $tab_min_width) {
-        $this.wrap('<div class="hide-tab-scrollbar"></div>');
-
-        // Create the measurement node
-        var scrollDiv = document.createElement("div");
-        scrollDiv.className = "scrollbar-measure";
-        document.body.appendChild(scrollDiv);
-        var scrollbarHeight = scrollDiv.offsetHeight - scrollDiv.clientHeight;
-        document.body.removeChild(scrollDiv);
-
-        if (scrollbarHeight === 0) {
-          scrollbarHeight = 15;
-          $this.find('.indicator').css('bottom', scrollbarHeight);
-        }
-        $this.height($(this).height() + scrollbarHeight);
-      }
     });
 
     },

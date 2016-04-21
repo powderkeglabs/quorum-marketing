@@ -7,46 +7,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
     <meta name="google-site-verification" content="n-AbeiAYgU08sC5C9fnMLSbP3TONuQ6Nde8I5b9epNw" />
-    <meta name="description" content="">
+    <meta name="description" content="Increase owner representation at meetings with our electronic proxy, online voting, and owner engagement platform.">
     <meta name="author" content="PKL">
 
-    <meta property="og:title" content="Quorum - Electronic Proxies for Condo Meetings" />
+    <meta property="og:title" content="GetQuorum: Electronic Proxies for Condo Meetings" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:site_name" content="Quorum" />
+    <meta property="og:url" content="/" />
+    <meta property="og:image" content="/assets/images/toronto1.jpg" />
+    <meta property="og:description" content="Increase owner representation at meetings with our electronic proxy, online voting, and owner engagement platform." />
+    <meta property="og:site_name" content="GetQuorum" />
 
-    <title>Quorum - Electronic Proxies for Condo Meetings</title>
+    <title>GetQuorum: Electronic Proxies for Condo Meetings</title>
     <link rel="canonical" href="" />
     <link rel="stylesheet" href="/assets/css/main.css" />
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" /> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
   </head>
 
   <body>
 
     <nav role="naviation">
-  <div class="nav-wrapper container">
-    <a href="/" class="brand-logo">
-      
-<span><i class="fa fa-group fa-lg"></i></span>
-<span class="full">Quorum</span>
-
-    </a>
+  <div class="nav-wrapper">
+    <a href="/" class="brand-logo"><span class="full">GetQuorum</span>
+</a>
+    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
-      <li><a href="http://demo.getquorum.com">Demo</a></li>
-      <li><a href="stories.html">Stories</a></li>
-      <li><a href="/#faq">FAQ</a></li>
-      <li><a href="/#contact">Contact</a></li>
+      <li><a href="http://demo.getquorum.com">Try the Demo</a></li>
+<li><a href="/stories">Stories</a></li>
+<li><a href="/#faq">FAQ</a></li>
+<li><a href="/contact">Contact</a></li>
+
+    </ul>
+    <ul class="side-nav" id="mobile-demo">
+      <li class="side-nav__brand-logo flex flex-row">
+        <a href="/"><i class="fa fa-4x fa-users"></i></a>
+      </li>
+      <li><a href="/">Home</a></li>
+      <li><a href="http://demo.getquorum.com">Try the Demo</a></li>
+<li><a href="/stories">Stories</a></li>
+<li><a href="/#faq">FAQ</a></li>
+<li><a href="/contact">Contact</a></li>
+
     </ul>
   </div>
 </nav>
 
 
-    <h2>Contributing</h2><ul>
+    
+      <h2>Contributing</h2><ul>
 <li>Compiling Files<ul>
 <li><code>npm install</code></li>
 <li><code>grunt monitor</code>, this will compile .scss, .js., .jade files</li>
@@ -78,33 +89,79 @@
 <li>Submit a pull request with full remarks documenting your changes</li>
 <li>Pull request MAY then be accepted by project creators</li>
 </ul>
+<h2>Jasmine Testing Guide</h2><p><strong>References:</strong></p>
+<ul>
+<li><a href="http://jasmine.github.io/2.0/introduction.html">Jasmine Documentation</a></li>
+<li><a href="https://github.com/gruntjs/grunt-contrib-jasmine">Grunt Jasmine Plugin</a></li>
+<li><a href="https://github.com/Dogfalo/materialize/tree/master/tests/spec">Example Jasmine Tests</a></li>
+<li><a href="https://travis-ci.org/Dogfalo/materialize">Travis CI</a></li>
+</ul>
+<p>Before you start, make sure you install grunt and all its dependencies. To verify you have all the correct dependencies you can run <code>grunt travis</code> and it will run the tests. If you get an errors and have not made any changes, it means you have not installed the proper dependencies.</p>
+<p>Materialize uses Jasmine as the testing framework. We also include a jQuery library which allows you to write tests using jQuery syntax.</p>
+<h3>Starting Out</h3><p>First to familiarize yourself with how the tests are structured, you can take a look inside the <code>tests/</code> directory. Each component should have its own folder. Follow the file-naming conventions that are used in the existing tests.</p>
+<p>Before writing tests, make sure you are working off of a clean git branch of your fork. This will greatly simplify the Pull Request process.</p>
+<h3>Writing Tests</h3><p>Before writing tests, make sure you understand what the expected-behavior of the component actually is. Reading over the component code and documentation will greatly aid you in this regard.</p>
+<p>Use <code>describe</code> blocks to section disparate portions of tests and <code>it</code> blocks inside those to further break up tests into features. Inside <code>it</code> blocks, you can have multiple except statements. As a general testing principle, be sure to try and test both the case and its “inverse” to lessen the chance for false positives.</p>
+<p>Example:</p>
+<pre><code class="language-javascript">expect(toast.first(&#39;span&#39;).text()).toBe(&#39;I am toast content&#39;);
+expect(toast.first(&#39;span&#39;).text()).not.toBe(&#39;I am toast&#39;);
+</code></pre>
+<p>You can use beforeEach, and afterEach in either block to designate code that will execute before or after each item. This is useful if you need to setup some scenario for each test, or reset some things after each test.</p>
+<p>When writing expect statements (Jasmine’s form of assert), it is very important to write an expected behavior string so in the event of an error, the test that failed is very clear. </p>
+<p>Example:</p>
+<pre><code class="language-javascript">expect(toast.length).toBe(0, &#39;because toast should be removed by now&#39;);
+</code></pre>
+<p>When this expect statement fails it will list the reason as “because toast should be removed by now”.</p>
+<p>Because our components are very front end heavy, familiarize yourself with jQuery ways of interacting with the dom and our components. You can use methods like <a href="http://api.jquery.com/trigger/">trigger</a>, to simulate certain events like the user clicking a button.</p>
+<p>We also understand that testing CSS properties is pretty tough so you’ll have to be creative when writing good tests that ensure the styling is still working. Try and cover as many cases as you can but don’t worry if there are some edge cases. You can add comments describing some problematic edge cases in TODOs so we know about them.</p>
+<h3>Submitting Your Pull Request</h3><p>Try and keep your commit history clean and concise. Once you submit your pull request, <a href="https://travis-ci.org/Dogfalo/materialize">Travis CI</a> will automatically run your tests and will show a checkmark to show that all the tests have passed. Once this is done, we’ll review your tests and code and make comments if there are issues or things we think could be improved. Then once everything looks good we’ll merge the code in!</p>
+<h3>Useful Jasmine Tips</h3><ol>
+<li><p>To only run a specific spec at a time, to avoid wasting your time running all our other tests, you can set the flag <code>--filter</code>. For example:</p>
+<pre><code> `grunt travis --filter=tabs`
+</code></pre><p> This would only run specs with tabs in its name. </p>
+</li>
+<li><p>If you need a timeout in your test (waiting for some animation or action to be executed) you need to use the done callback. In your <code>it()</code> behavior function set done as an argument to your anonymous function. Then you can use javascript’s window <code>setTimeout</code>s normally. And when you want the test to finish just call the <code>done()</code> function. For example:</p>
+<pre><code class="language-javascript"> it (&#39;should wait for a timeout&#39;, function(done) {
+   // Execute action
+   timeout(setTimeout(function() {
+     // Wait a second
+     // Test for result
+     done();
+   }, 1000);
+ });
+</code></pre>
+<p> <strong>Note:</strong> If you add done as a callback, and you don’t call the <code>done()</code> function, it will stall forever and error after a max limit of around 5 seconds. </p>
+</li>
+</ol>
+    
 
     <footer class="page-footer">
   <div class="container">
     <div class="row">
       <div class="col l8 s12">
-        <h5>
-        <a href="/" class="brand-logo">
-          
-<span><i class="fa fa-group fa-lg"></i></span>
-<span class="full">Quorum</span>
-
-        </a>
-        </h5>
-        <p class="grey-text text-lighten-4 headline">
-          Simple, Condo Act compliant electronic proxies and online voting for condominium meetings.
+        <h5><a href="/" class="brand-logo"><span class="full">GetQuorum</span>
+</a></h5>
+        <p class="grey-text text-lighten-4 headline">Simple, Condo Act compliant electronic proxies for condominium meetings.</p>
+        <div class="grey-text text-lighten-4 footer__email">
+          <span><i class="fa fa-envelope"></i></span>
+          <a class="grey-text text-lighten-4" href="mailto:contact@getquorum.com">
+            contact@getquorum.com
+          </a>
+        </div>
+        <div class="grey-text text-lighten-4 footer__phone">
+          <!-- <span><i class="fa fa-phone"></i></span> -->
+        </div>
         </p>
         <br><br>
       </div>
       <div class="col l4 s12 white-text footer-links">
         <h5 class="white-text">Links</h5>
         <ul>
-          <li><a class="grey-text text-lighten-2" href="http://demo.getquorum.com">Demo</a></li>
-          <li><a class="grey-text text-lighten-2" href="stories.html">Stories</a></li>
-          <li><a class="grey-text text-lighten-2" href="/#faq">FAQ</a></li>
-          <li><a class="grey-text text-lighten-2" href="/#contact">Contact</a></li>
-          <li><a class="grey-text text-lighten-2" href="/terms-of-use.html">Terms</a></li>
-          <li><a class="grey-text text-lighten-2" href="/privacy.html">Privacy</a></li>
+          <li><a href="http://demo.getquorum.com">Try the Demo</a></li>
+<li><a href="/stories">Stories</a></li>
+<li><a href="/#faq">FAQ</a></li>
+<li><a href="/contact">Contact</a></li>
+
         </ul>
       </div>
     </div>
@@ -112,11 +169,13 @@
   <div class="footer-copyright">
     <div class="container">
       <div class="row">
-        <div class="col s6 left-align">
-          <span class="grey-text text-lighten-3">&copy; 2016 Quorum</span>
+        <div class="col s6 left-align pkl">
+          <span class="grey-text text-lighten-3">&copy; 2016 <a href="https://powderkeglabs.com">PowderKeg Labs, Inc.</a></span>
         </div>
         <div class="col s6 right-align pkl">
-          <span class="grey-text text-lighten-3">By <a href="https://powderkeglabs.com">PKL</a></span>
+          <span class="grey-text text-lighten-3"><a href="/terms-of-use.html">Terms</a></span>
+          &nbsp;|&nbsp;
+          <span class="grey-text text-lighten-3"><a href="/privacy.html">Privacy</a></span>
         </div>
       </div>
     </div>
@@ -125,11 +184,8 @@
 
 
     <!-- Script Imports -->
-    <!-- Custom Theme JavaScript -->
-    <script src="/assets/components/jquery/dist/jquery.min.js"></script>
-    <script src="/assets/components/Materialize/dist/js/materialize.min.js"></script>
-    <script src="/assets/components/angular/angular.min.js"></script>
-    <script src="/assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script src="/assets/js/main.js"></script>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -137,8 +193,8 @@
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-73893063-1', 'auto');
-      ga('send', 'pageview');
+      // ga('create', 'UA-73893063-1', 'auto');
+      // ga('send', 'pageview');
     </script>
   </body>
 </html>
