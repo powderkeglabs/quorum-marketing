@@ -1,6 +1,6 @@
 Our Client is a 200-unit downtown Toronto residential condo corporation that has traditionally had issues reaching quorum at their AGMs. Using the [Quorum platform](http://getquorum.com), they were able to significantly increase the number of proxies submitted year-over-year and successfully reached quorum days in advance of their AGM.
 
----
+![Portland Park Village](https://d1v53h6w11vaa4.cloudfront.net/stories/ppv_large.jpg)
 
 As per the [Ontario Condominium Act](http://www.ontario.ca/laws/statute/98c19), every condo needs to hold an annual general meeting (AGM) of owners. The meeting is used to [conduct business that requires owners to vote](http://www.condoinformation.ca/owners-meetings-voting), such as the election new directors or on the amendment of by-laws. It's similar in nature to the AGM's held by publicly traded for-profit corporations.
 
@@ -47,7 +47,7 @@ Our mission was simple - help our client achieve quorum through proxies by...
 
 ##### Making it easy
 <div class="flex">
-![The Proxy Form](/assets/images/hero.png "The Proxy Form")
+![The Proxy Form](https://d1v53h6w11vaa4.cloudfront.net/hero.png "The Proxy Form")
 *The Electronic Proxy*
 </div>
 
@@ -63,7 +63,7 @@ To get the word out, an initial email was sent with a link to the electronic pro
 Ease and convenience matters not unless owners care enough to take action. We give them a reason to care about achieving quorum because our reminder emails educate owners on why it matters: that failing to reach quorum has a monetary cost to them.
 
 <div class="flex">
-![Our educational email reminders](/assets/images/proxies/quorum-email.jpg)
+![Our educational email reminders](https://d1v53h6w11vaa4.cloudfront.net/stories/quorum-email.jpg)
 <p class="image-caption">*Our educational email reminders*</p>
 </div>
 

@@ -19,7 +19,7 @@
       }
     ],
     "date": "December 2, 2015",
-    "image": "/assets/images/toronto1.jpg",
+    "image": "https://d1v53h6w11vaa4.cloudfront.net/toronto1.jpg",
     "author": "JJ Hiew",
     "tags": "Case Study",
     "description": "A case study showing how we helped a 200 unit condo, one with recurring quorum issues, double the proxy submissions year-to-year and reach requorum days before their latest AGM.",
@@ -38,7 +38,7 @@
       }
     ],
     "date": "April 16, 2016",
-    "image": "/assets/images/toronto1.jpg",
+    "image": "https://d1v53h6w11vaa4.cloudfront.net/toronto1.jpg",
     "author": "JJ Hiew",
     "tags": "Case Study",
     "description": "A case study about how we helped a 300-unit condo pass a critical bylaw with the GetQuorum platform.",

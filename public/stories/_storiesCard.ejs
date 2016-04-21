@@ -1,13 +1,23 @@
 <div class="col s12 m6">
   <div class="stories__card card">
-    <div class="stories__card-trim"></div>
+    <div class="stores__card-image card-image">
+      <% if (url) { %>
+        <a href="<%= url %>"><img src="<%= image %>"></a>
+      <% } else { %>
+        <img src="<%= image %>">
+      <% } %>
+    </div>
     <div class="stories__card--content card-content">
       <span class="stories__card--title card-title"><%= title %></span>
       <span class="stories__card--date"><%= date %></span>
       <p><%= text %></p>
     </div>
     <div class="card-action stories__card--action right-align">
-      <a href="<%= url %>">Read the Case Study</a>
+      <% if (url) { %>
+        <a href="<%= url %>">Read the Story</a>
+      <% } else { %>
+        <span>COMING SOON</span>
+      <% } %>
     </div>
   </div>
 </div>
