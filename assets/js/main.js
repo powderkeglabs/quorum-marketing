@@ -8,6 +8,10 @@
     track('Clicked CTA', { page: 'home', location: 'header' });
   });
 
+  $('#home-featured-post').click(function() {
+    track('View Featured Post', { page: 'home', location: 'featured post' });
+  });
+
   $('#home-demo-btn').click(function() {
     track('Clicked Demo', { page: 'home', location: 'demo' });
   });
@@ -27,6 +31,7 @@
   $('#send-message').click(function() {
     track('Send Message', { page: 'contact', location: 'form' });
   });
+
 
   function track(action, data) {
     analytics.track(action, data);
