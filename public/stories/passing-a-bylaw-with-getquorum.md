@@ -1,4 +1,4 @@
-We teamed up with Malvern Condominium Property Management to help one of their clients, a 300-unit condo in Toronto, pass a critical Borrowing Bylaw at a Special General Meeting. This bylaw would have a significant impact on the financial health of their corporation as it related to a recently levied $1-million dollar Special Assessment. Through the use of the GetQuorum platform, we were able to help the client successfully pass their bylaw, which allowed the corporation to avoid collecting the Special Assessment from their unit owners.
+We teamed up with Malvern Condominium Property Management to help one of their clients, a 290-unit condo in Toronto, pass a critical Borrowing Bylaw at a Special General Meeting. This bylaw would have a significant impact on the financial health of their corporation as it related to a recently levied $1-million dollar Special Assessment. Through the use of the GetQuorum platform, we were able to help the client successfully pass their bylaw, which allowed the corporation to avoid collecting the Special Assessment from their unit owners.
 
 <div class="flex">
 ![Bylaw](https://d1v53h6w11vaa4.cloudfront.net/stories/bylaw_building_large_1.jpg)
@@ -10,7 +10,7 @@ The business at most Annual General Meetings is to elect candidates to a corpora
 
 Bylaw meetings are a different beast - not only does quorum need to be reached, but a majority of the total unit owners in the Corporation must vote in favour of the bylaw for it to pass. This higher voting threshold is what traditionally makes passing bylaws so difficult, especially for condos that already struggle to reach quorum.
 
-> ##### Our 300-unit client needed at least 151 owners to vote in favour of the bylaw for it to pass.
+> ##### Our 300-unit client needed at least 146 owners to vote in favour of the bylaw for it to pass.
 
 This was going to be a daunting task, but we were up to the challenge.
 
@@ -40,15 +40,13 @@ The new tool would act as a “wizard” - guiding owners through the proxy & vo
 
 <table class="striped">
   <tbody>
-    <tr><td width="60%">**Votes required to pass bylaw:**</td><td>151</td></tr>
+    <tr><td width="60%">**Votes required to pass bylaw:**</td><td>146</td></tr>
     <tr><td>**Total votes received:**</td><td>**160**</td></tr>
-    <tr><td>**% of votes by e-proxy:**</td><td style="color: green">**34%**</td></tr>
-    <tr><td>**% of votes by paper proxy:**</td><td></td></tr>
-    <tr><td>**% of votes in person:**</td><td></td></tr>
+    <tr><td>**% of votes by proxy:**</td><td style="color: green">**54%**</td></tr>
   </tbody>
 </table>
 
-We're ecstatic at the outcome for the client and are happy that we could be a part of their success.
+Of the proxies received, nearly 60% of those were received through our e-proxy tool. We're ecstatic at the outcome for the client and are happy that we could be a part of their success.
 
 ##### Need help passing a bylaw?  
 
