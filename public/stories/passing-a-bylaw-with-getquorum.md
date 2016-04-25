@@ -10,7 +10,7 @@ The business at most Annual General Meetings is to elect candidates to a corpora
 
 Bylaw meetings are a different beast - not only does quorum need to be reached, but a majority of the total unit owners in the Corporation must vote in favour of the bylaw for it to pass. This higher voting threshold is what traditionally makes passing bylaws so difficult, especially for condos that already struggle to reach quorum.
 
-> ##### Our 300-unit client needed at least 146 owners to vote in favour of the bylaw for it to pass.
+> ##### Our client needed at least 146 owners to vote in favour of the bylaw for it to pass.
 
 This was going to be a daunting task, but we were up to the challenge.
 
