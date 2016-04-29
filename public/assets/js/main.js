@@ -32,6 +32,13 @@
     track('Send Message', { page: 'contact', location: 'form' });
   });
 
+  $('#footer-twitter').click(function() {
+    track('Go Twitter', { page :'NA', location: 'footer' });
+  });
+
+  $('#footer-linkedin').click(function() {
+    track('Go LinkedIn', { page :'NA', location: 'footer' });
+  });
 
   function track(action, data) {
     analytics.track(action, data);
