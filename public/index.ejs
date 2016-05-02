@@ -7,8 +7,8 @@
           <p class="lead-in">
             <%- headline %>
           </p>
-          <p>
-            <a id="home-header-cta" href="<%=contact_url %>" class="btn btn-large waves-effect waves-light accent-color">Get Started</a>
+          <p class="index--header__cta">
+            <a id="home-header-cta" href="#estimate" class="btn btn-large waves-effect waves-light accent-color">Get a Quote</a>
           </p>
         </div>
         <div class="col s12 m5 l6 hero-col">
@@ -220,14 +220,6 @@
     </div>
   </section>
 
-  <section class="get-started" id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 center-align">
-          <p><a id="home-bottom-cta" href="<%= contact_url %>" class="btn btn-large accent-color">Let's Get Started</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
+  <%- partial('_shared_partials/quote') %>
 
 </main>

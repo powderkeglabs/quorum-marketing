@@ -1,0 +1,39 @@
+.estimate__form,
+.contact__form {
+  textarea,
+  input[type=email],
+  input[type=text] {
+    background-color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 4px;
+    width: 95%;
+  }
+
+  textarea:focus,
+  input[type=email]:focus,
+  input[type=text]:focus {
+    border-bottom: 1px solid $primary-color;
+    box-shadow: 0 1px 0 0 $primary-color;;
+  }
+
+  label.active {
+    color: $primary-color !important;
+  }
+
+  label {
+    margin-top: -10px;
+  }
+
+  .error {
+    top: -10px;
+    position: relative;
+    font-size: 14px;
+    color: $error-color;
+    display: none;
+  }
+
+  .error.has-error {
+    display: block
+  }
+}
