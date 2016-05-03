@@ -40,11 +40,6 @@ $fill-color: #494E54;
   background-color: $accent-color-secondary;
 }
 
-.btn.accent-secondary-color:hover,
-.btn-large.accent-secondary-color:hover {
-  background-color: lighten($accent-color-secondary, 5%);
-}
-
 .text-muted {
   color: $text-muted;
 }
@@ -66,4 +61,37 @@ a {
   margin-bottom: 0px;
   /* Fix for IE*/
   border: 1px solid transparent;
+}
+
+.btn.accent-secondary-color:hover,
+.btn-large.accent-secondary-color:hover {
+  background-color: lighten($accent-color-secondary, 5%);
+}
+
+.btn:hover, .btn-large:hover {
+  color: $button-color-raised;
+  background-color: lighten($button-color, 5%);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid $accent-color-secondary;
+  color: $accent-color-secondary;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+.btn-secondary:hover {
+  background-color: $accent-color-secondary;
+}
+
+.btn-secondary-header {
+  border-color: #fff;
+  background-color: rgba($accent-color-secondary, 0.9);
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn-secondary-header:hover {
+  background-color: rgba($accent-color-secondary, 1);
 }
