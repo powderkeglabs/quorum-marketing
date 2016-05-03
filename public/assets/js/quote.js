@@ -11,6 +11,8 @@
     e.preventDefault();
     clearErrors();
 
+    analytics.track('Get a quote', { page: 'Home', location: 'quote'});
+
     if (!validator.isEmail(quoteEmailInput.val())) {
       errors = true;
       $('.quote__input-field--email .error').addClass('has-error');
