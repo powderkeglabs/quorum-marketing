@@ -16,6 +16,11 @@ header {
   padding-bottom: 20px;
 }
 
+.home-header-cta,
+.home-header-demo {
+  width: 200px;
+}
+
 section {
   padding-top: $section-padding;
   padding-bottom: $section-padding;
@@ -48,5 +53,15 @@ main > section:nth-child(odd) {
 
   .index-header__row {
     padding-top: 50px;
+  }
+}
+
+@media #{$medium-and-down} {
+  .home-header-cta {
+    margin-right: 3px;
+  }
+
+  .home-header-demo {
+    margin-left: 3px;
   }
 }
