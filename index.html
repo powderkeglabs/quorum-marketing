@@ -45,6 +45,7 @@
     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
       <li><a href="/demos">Try the Demo</a></li>
+<li><a href="/#estimate">Get a Quote</a></li>
 <li><a href="/stories">Stories</a></li>
 <li><a href="/#faq">FAQ</a></li>
 <li><a href="/contact">Contact</a></li>
@@ -56,6 +57,7 @@
       </li>
       <li><a href="/">Home</a></li>
       <li><a href="/demos">Try the Demo</a></li>
+<li><a href="/#estimate">Get a Quote</a></li>
 <li><a href="/stories">Stories</a></li>
 <li><a href="/#faq">FAQ</a></li>
 <li><a href="/contact">Contact</a></li>
@@ -75,8 +77,8 @@
           <p class="lead-in">
             Simple, Condo Act compliant electronic proxies for condominium meetings.
           </p>
-          <p>
-            <a id="home-header-cta" href="/contact" class="btn btn-large waves-effect waves-light accent-color">Get Started</a>
+          <p class="index--header__cta">
+            <a id="home-header-cta" href="#estimate" class="btn btn-large waves-effect waves-light accent-color">Get a Quote</a>
           </p>
         </div>
         <div class="col s12 m5 l6 hero-col">
@@ -297,15 +299,53 @@
     </div>
   </section>
 
-  <section class="get-started" id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 center-align">
-          <p><a id="home-bottom-cta" href="/contact" class="btn btn-large accent-color">Let's Get Started</a></p>
-        </div>
+  <section class="estimate" id="estimate">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 center-align">
+        <h2>Get a Quote</h2>
+        <p>Let us know what you need and you'll get it by email.</p>
       </div>
     </div>
-  </section>
+    <div class="row">
+      <form class="col offset-m2 s12 m8 estimate__form">
+        <div class="row">
+          <div class="input-field quote__input-field--email col s12">
+            <input type="email" placeholder="john.smith@example.com" id="quote-email">
+            <label for="quote-email">Your Email Address</label>
+            <span class="error">Please enter a valid email</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field input-field__select quote__input-field--units col s12">
+            <label class="active" for="quote-units">Number of Units In Your Condo</label>
+            <select id="quote-units" class="browser-default">
+              <option value="" disabled="disabled" selected="selected">Choose # of units</option>
+              <option value="1 - 100">1 - 100 units</option>
+              <option value="101 - 300">101 - 300 units</option>
+              <option value="301+">301 units or more</option>
+            </select>
+            <span class="error">Please tell us how many units you have in your condo</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <button id="send-quote" class="btn btn-large waves-effect waves-light accent-color">Get a Quote Now</button>
+          </div>
+        </div>
+        <div class="row estimate__form--message-row form--message-row">
+          <div class="col s12">
+            <span class="response-message"></span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script src="/assets/components/validator-js/validator.min.js"></script>
+<script src="/assets/js/quote.js"></script>
+
 
 </main>
     
@@ -344,6 +384,7 @@
         <h5 class="white-text">Links</h5>
         <ul>
           <li><a href="/demos">Try the Demo</a></li>
+<li><a href="/#estimate">Get a Quote</a></li>
 <li><a href="/stories">Stories</a></li>
 <li><a href="/#faq">FAQ</a></li>
 <li><a href="/contact">Contact</a></li>
