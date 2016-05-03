@@ -16,7 +16,7 @@ This was going to be a daunting task, but we were up to the challenge.
 
 ##### Our Approach
 
-The approach we took was to maximize the overall meeting representation, both by proxy and through in-person attendance. Because of the high voting threshold required, the team realized that we had to make use of all the tools available in order to engage owners. This would include traditional poster campaigns in the lobby and elevators, posting on the client's website, and other other methods.
+The approach we took was to maximize the overall meeting representation, both by proxy and through in-person attendance. Because of the high voting threshold required, the team realized that we had to make use of all the tools available in order to engage owners. This would include traditional poster campaigns in the lobby and elevators, posting on the client's website, and other methods.
 
 We worked with the team at Malvern to create a targeted email campaign to educate and engage owners. The nature of this bylaw was such that, should it fail, owners would be immediately hit with a Special Assessment in the thousands-of-dollars range. As such, we believed that owners would be engaged if they were properly educated about the key issues of the bylaw vote.
 
