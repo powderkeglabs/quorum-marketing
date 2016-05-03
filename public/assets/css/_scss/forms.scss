@@ -36,4 +36,9 @@
   .error.has-error {
     display: block
   }
+
+  .input-field__select .error {
+    padding-top: 15px;
+  }
+
 }

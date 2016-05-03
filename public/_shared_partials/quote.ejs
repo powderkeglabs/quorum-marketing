@@ -3,30 +3,44 @@
     <div class="row">
       <div class="col s12 center-align">
         <h2>Get a Quote</h2>
-        <p>We'll email you a quote within 24 hours.</p>
+        <p>Let us know what you need and you'll get it by email.</p>
       </div>
     </div>
     <div class="row">
-      <form class="col s12 estimate__form">
+      <form class="col offset-m2 s12 m8 estimate__form">
         <div class="row">
-          <div class="input-field col s12 m5 l6">
+          <div class="input-field quote__input-field--email col s12">
             <input type="email" placeholder="john.smith@example.com" id="quote-email">
             <label for="quote-email">Your Email Address</label>
+            <span class='error'>Please enter a valid email</span>
           </div>
-          <div class="input-field col s12 m3 l3">
-            <label class="active" for="quote-units"># of Units In Your Condo</label>
-            <select class="browser-default">
-              <option value="" disabled selected>Choose one</option>
-              <option value="1 - 100">1 - 100</option>
-              <option value="101 - 300">101 - 300</option>
-              <option value="300+">300+</option>
+        </div>
+        <div class="row">
+          <div class="input-field input-field__select quote__input-field--units col s12">
+            <label class="active" for="quote-units">Number of Units In Your Condo</label>
+            <select id="quote-units" class="browser-default">
+              <option value="" disabled selected>Choose # of units</option>
+              <option value="1 - 100">1 - 100 units</option>
+              <option value="101 - 300">101 - 300 units</option>
+              <option value="301+">301 units or more</option>
             </select>
+            <span class='error'>Please tell us how many units you have in your condo</span>
           </div>
-          <div class="input-field col s12 m4 l3">
-            <button class="btn waves-effect waves-light accent-color">Get a Quote</button>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <button id="send-quote" class="btn btn-large waves-effect waves-light accent-color">Get a Quote Now</button>
+          </div>
+        </div>
+        <div class="row estimate__form--message-row form--message-row">
+          <div class="col s12">
+            <span class="response-message"></span>
           </div>
         </div>
       </form>
     </div>
   </div>
 </section>
+
+<script src="/assets/components/validator-js/validator.min.js"></script>
+<script src="/assets/js/quote.js"></script>
