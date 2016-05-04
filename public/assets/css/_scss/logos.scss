@@ -2,29 +2,37 @@
 #logos {
   background-color: #fff;
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .logos-row {
-  // height: 40px;
   margin-bottom: 0px;
 }
 
 .logo-image {
   height: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .logos-text {
-  height: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  align-self: center;
-  align-content: center;
-  justify-content: center;
+
 }
 
 .logos-text--text {
   opacity: .6;
   font-size: 18px;
   font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.logo-ppv {
+  margin-top: 0px;
+}
+
+@media #{$medium-and-up} {
+  .logo-ppv {
+    margin-top: 20px;
+  }
 }

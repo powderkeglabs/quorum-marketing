@@ -1,4 +1,19 @@
-// On larger screen sizes, switch to 2 column view
+.faq-header {
+  background-image: url('https://d1v53h6w11vaa4.cloudfront.net/toronto1.jpg');
+  background-position: center;
+  background-size: cover;
+  min-height: 0px;
+}
+
+.faq-header .header-fill-overlay{
+  min-height: 0px;
+}
+
+.faq__header-row {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
 @media #{$medium-and-up} {
   .faq .flex.row {
     flex-flow: row wrap;
