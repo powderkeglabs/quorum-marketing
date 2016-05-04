@@ -4,8 +4,12 @@
     $('.button-collapse').sideNav();
   });
 
-  $('#home-header-cta').click(function() {
-    track('Clicked CTA', { page: 'home', location: 'header' });
+  $('#home-header-quote').click(function() {
+    track('Clicked Quote', { page: 'home', location: 'header' });
+  });
+
+  $('#home-header-demo').click(function() {
+    track('Clicked Demo', { page: 'home', location: 'header' });
   });
 
   $('#home-featured-post').click(function() {
@@ -14,10 +18,6 @@
 
   $('#home-demo-btn').click(function() {
     track('Clicked Demo', { page: 'home', location: 'demo' });
-  });
-
-  $('#home-bottom-cta').click(function() {
-    track('Clicked CTA', { page: 'home', location: 'bottom' });
   });
 
   $('#demo-btn-1').click(function() {
