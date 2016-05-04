@@ -92,8 +92,9 @@ a {
 .btn-secondary-header {
   border-color: #fff;
   background-color: rgba($accent-color-secondary, 0.9);
-  border: 2px solid #fff;
+  border: 1px solid color('grey', 'lighten-2');
   color: #fff;
+  font-weight: 300;
 }
 
 .btn-secondary-header:hover {
